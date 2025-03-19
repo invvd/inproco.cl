@@ -1,40 +1,32 @@
-"use client";
-import { IconMenu, IconX } from "@tabler/icons-react";
+import { IconX } from "@tabler/icons-react";
 import Link from "next/link";
-import { useState } from "react";
 
 type MobileNavProps = {
   secciones: {
     nombre: string;
     url: string;
   }[];
+  showMenu: boolean;
+  setShowMenu: (showMenu: boolean) => void;
 };
 
-export function MobileNav({ secciones }: MobileNavProps) {
-  const [showMenu, setShowMenu] = useState(false);
-
-  // Lógica del botón de menú
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-  // Menu
+export function MobileNav({
+  secciones,
+  showMenu,
+  setShowMenu,
+}: MobileNavProps) {
   return (
     <div className="md:hidden flex items-center">
-      {/* Boton del menu */}
-      <button onClick={toggleMenu} className="cursor-pointer" title="Menu">
-        <IconMenu />
-      </button>
-
       {/* Menu */}
-      {/* <nav
-        className={`fixed border top-0 z-50 right-0 w-2/3 max-w-[300px] h-full ${
-          showMenu ? "translate-x-0" : "translate-x-[120%]"
-        } transition-all duration-200`}
+      <nav
+        className={`fixed backdrop-blur-sm flex backdrop-brightness-[25%] justify-center items-center text-center top-0 z-50 right-0 w-screen h-full ${
+          showMenu ? "" : "translate-y-full"
+        } transition`}
       >
-        <ul>
+        <ul className="text-xl [&>li]:hover:text-primary [&>li]:transition-colors flex flex-col space-y-4">
           <li>
             <button
-              onClick={toggleMenu}
+              onClick={() => setShowMenu(!showMenu)}
               className="cursor-pointer"
               title="Cerrar"
             >
@@ -47,7 +39,7 @@ export function MobileNav({ secciones }: MobileNavProps) {
             </li>
           ))}
         </ul>
-      </nav> */}
+      </nav>
     </div>
   );
 }
