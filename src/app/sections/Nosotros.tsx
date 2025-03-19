@@ -1,0 +1,80 @@
+import localFont from "next/font/local";
+
+const monument = localFont({
+  src: "../fonts/Monument.woff2",
+});
+
+function Nosotros() {
+  return (
+    <section className="px-10 lg:px-20 py-10 bg-gradient-to-b space-y-10 from-neutral-950 to-neutral-900 text-white place-items-center grid lg:grid-cols-2 gap-20 ">
+      <div className="text-center flex w-full flex-col items-center justify-center">
+        <h1
+          className={`${monument.className} uppercase text-center text-2xl mb-5`}
+        >
+          Nosotros
+        </h1>
+        <p className="text-[#c4cccf] text-pretty max-w-[500px] text-sm flex flex-col space-y-6">
+          <span>
+            Somos una empresa de{" "}
+            <strong className="text-primary">
+              ingeniería mecánica y eléctrica
+            </strong>{" "}
+            especializada en el{" "}
+            <strong className="text-white">
+              diseño, fabricación y desarrollo
+            </strong>{" "}
+            de productos y servicios para los sectores de{" "}
+            <strong className="text-white">
+              minería, industria y obras civiles
+            </strong>
+            .
+          </span>
+
+          <span>
+            Inproco fue fundada en <strong className="text-white">2016</strong>{" "}
+            por su actual{" "}
+            <strong className="text-primary">
+              gerente general, Pablo Gutiérrez
+            </strong>
+            , ingeniero eléctrico con más de{" "}
+            <strong className="text-white">25 años de trayectoria</strong> en el
+            desarrollo de proyectos y la dirección de equipos de{" "}
+            <strong className="text-white">
+              ingeniería mecánica y eléctrica
+            </strong>
+            .
+          </span>
+
+          <span>
+            A lo largo de estos{" "}
+            <strong className="text-white">siete años</strong>, hemos diseñado,
+            integrado y fabricado equipamiento mecánico y eléctrico para{" "}
+            <strong className="text-primary">
+              empresas de gran envergadura
+            </strong>
+            , que han confiado en nosotros para el desarrollo de sus proyectos,
+            obteniendo{" "}
+            <strong className="text-primary">
+              resultados altamente satisfactorios
+            </strong>
+            . Gracias a este compromiso con la excelencia, hemos experimentado
+            un crecimiento sostenido, tendencia que confiamos en seguir
+            impulsando en el futuro.
+          </span>
+          <span>
+            <strong className="text-white">
+              A Somos Inproco y, juntos, damos forma a la energía que mueve al
+              mundo.
+            </strong>
+          </span>
+        </p>
+      </div>
+
+      <div className="h-full flex rounded-xl justify-center items-center w-full border">
+        Foto
+      </div>
+    </section>
+  );
+}
+
+export default Nosotros;
