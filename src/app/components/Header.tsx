@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import { MobileNav } from "./MobileNav";
 import Link from "next/link";
+import { IconMenu } from "@tabler/icons-react";
+import { useState } from "react";
 
 const secciones = [
   {
@@ -12,8 +15,12 @@ const secciones = [
     url: "/nosotros",
   },
   {
+    nombre: "Proyectos",
+    url: "/proyectos",
+  },
+  {
     nombre: "Servicios",
-    url: "/servicios",
+    url: "/Servicios",
   },
   {
     nombre: "Contacto",
@@ -22,29 +29,49 @@ const secciones = [
 ];
 
 export function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
-    <header className="z-10 backdrop-brightness-75 flex fixed w-full h-16 justify-between items-center p-4 rounded-lg top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm">
-      <Image
-        draggable={false}
-        width={100}
-        height={100}
-        src={"/logos/logo-white.webp"}
-        alt="Logo de Inproco"
-        loading="eager"
+    <>
+      <header className="z-10 backdrop-brightness-75 flex fixed w-auto h-16 justify-between items-center p-4 rounded-lg top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm">
+        <Link href="/">
+          <Image
+            draggable={false}
+            width={100}
+            height={100}
+            src={"/logos/logo-fade.webp"}
+            alt="Logo de Inproco"
+            loading="eager"
+          />
+        </Link>
+
+        <button
+          title="Menu"
+          className="md:hidden cursor-pointer hover:text-primary transition-colors"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        >
+          <IconMenu />
+        </button>
+
+        <nav className="hidden md:block">
+          <ul className="[&>li]:hover:text-secondary [&>li]:transition flex space-x-4">
+            {secciones.map(({ nombre, url }) => (
+              <li key={nombre}>
+                <Link href={url}>{nombre}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+
+      <MobileNav
+        secciones={secciones}
+        showMenu={showMenu}
+        setShowMenu={setShowMenu}
       />
-
-      <MobileNav secciones={secciones} />
-
-      <nav className="hidden md:block">
-        <ul className="flex space-x-4">
-          {secciones.map(({ nombre, url }) => (
-            <li key={nombre}>
-              <Link href={url}>{nombre}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+    </>
   );
 }
 
