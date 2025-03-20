@@ -23,7 +23,7 @@ export function MobileNav({
           showMenu ? "" : "translate-y-full"
         } transition`}
       >
-        <ul className="text-xl [&>li]:hover:text-primary [&>li]:transition-colors flex flex-col space-y-4">
+        <ul className="text-xl [&>li]:hover:text-secondary [&>li]:transition-colors flex flex-col space-y-4">
           <li>
             <button
               onClick={() => setShowMenu(!showMenu)}
