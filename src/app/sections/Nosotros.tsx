@@ -6,7 +6,7 @@ const monument = localFont({
 
 function Nosotros() {
   return (
-    <section className="px-10 lg:px-20 py-10 bg-gradient-to-b space-y-10 from-neutral-950 to-neutral-900 text-white place-items-center grid lg:grid-cols-2 gap-20 ">
+    <section className="px-10 lg:px-20 py-10 bg-gradient-to-b space-y-10 from-neutral-950 to-neutral-900 text-white place-items-center grid lg:grid-cols-2 lg:gap-20 ">
       <div className="text-center flex w-full flex-col items-center justify-center">
         <h1
           className={`${monument.className} uppercase text-center text-2xl mb-5`}
@@ -70,7 +70,7 @@ function Nosotros() {
         </p>
       </div>
 
-      <div className="h-full flex rounded-xl justify-center items-center w-full border">
+      <div className="aspect-[4/3] max-w-[400px] lg:max-w-[500px] flex rounded-xl justify-center items-center w-full border">
         Foto
       </div>
     </section>
