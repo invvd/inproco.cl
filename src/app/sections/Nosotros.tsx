@@ -22,6 +22,7 @@ export default function Nosotros() {
       </div>
       <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid lg:grid-cols-2 lg:gap-20 ">
         <motion.img
+          draggable={false}
           src="/images/nosotros.webp"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 100, scale: 1 }}
