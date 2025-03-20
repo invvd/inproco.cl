@@ -72,10 +72,9 @@ export default function Nosotros() {
             </span>
 
             <span>
-              A lo largo de estos{" "}
-              <strong className="text-white">siete años</strong>, hemos
-              diseñado, integrado y fabricado equipamiento mecánico y eléctrico
-              para{" "}
+              A lo largo de estos <strong className="text-white">años</strong>,
+              hemos diseñado, integrado y fabricado equipamiento mecánico y
+              eléctrico para{" "}
               <strong className="text-primary">
                 empresas de gran envergadura
               </strong>
@@ -90,7 +89,7 @@ export default function Nosotros() {
             </span>
             <span>
               <strong className="text-white">
-                A Somos Inproco y, juntos, damos forma a la energía que mueve al
+                Somos Inproco y, juntos, damos forma a la energía que mueve al
                 mundo.
               </strong>
             </span>
