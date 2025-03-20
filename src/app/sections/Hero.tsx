@@ -12,6 +12,7 @@ export default function Hero({ videoSrc }: HeroProps) {
         autoPlay
         muted
         playsInline
+        preload="auto"
       >
         <source src={videoSrc} />
       </video>
