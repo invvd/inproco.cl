@@ -4,11 +4,11 @@ type HeroProps = {
 
 export default function Hero({ videoSrc }: HeroProps) {
   return (
-    <section className="w-full max-h-screen top-0 z-0">
+    <section className="w-full max-h-svh top-0 z-0">
       <video
         controlsList="nodownload"
         loop
-        className="opacity-75 -z-10 top-0 w-full max-h-svh object-cover"
+        className="opacity-75 aspect-[4/3] max-h-svh -z-10 top-0 w-full object-cover"
         autoPlay
         muted
         playsInline
