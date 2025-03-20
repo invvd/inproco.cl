@@ -23,16 +23,16 @@ export default function Nosotros() {
       <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid lg:grid-cols-2 lg:gap-20 ">
         <motion.img
           src="/images/nosotros.webp"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 100 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 100, scale: 1 }}
           viewport={{ once: true }}
-          className="aspect-[4/3] object-cover mb-10 max-w-[400px] lg:max-w-[500px] flex rounded-xl justify-center items-center w-full"
+          className="aspect-[4/3] object-cover mb-10 max-w-[400px] lg:max-w-[500px] flex rounded-xl shadow-black/50 shadow-xl justify-center items-center w-full"
         ></motion.img>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.1 }}
           className="text-center flex w-full flex-col items-center justify-center"
         >
           <h2
