@@ -34,7 +34,7 @@ export function Header() {
   return (
     <>
       <header className="z-10 backdrop-brightness-75 flex fixed w-auto h-16 justify-between items-center p-4 rounded-lg top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm">
-        <Link href="/">
+        <Link className="hover:scale-105 transition" href="/">
           <Image
             draggable={false}
             width={100}
