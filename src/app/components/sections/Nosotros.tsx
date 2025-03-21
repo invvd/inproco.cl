@@ -12,6 +12,7 @@ export default function Nosotros() {
     <section className="from-neutral-950 to-neutral-800 bg-gradient-to-b">
       <div className="flex justify-center items-center pt-10">
         <Image
+          loading="eager"
           draggable={false}
           className="w-[300px]"
           src="/logos/logo-full-white.webp"
@@ -22,13 +23,14 @@ export default function Nosotros() {
       </div>
       <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid lg:grid-cols-2 lg:gap-20 ">
         <motion.img
+          loading="lazy"
           draggable={false}
           src="/images/nosotros.webp"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 100, scale: 1 }}
           viewport={{ once: true }}
           className="aspect-[4/3] object-cover mb-10 max-w-[400px] lg:max-w-[500px] flex rounded-xl shadow-black/50 shadow-xl justify-center items-center w-full"
-        ></motion.img>
+        />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100 }}

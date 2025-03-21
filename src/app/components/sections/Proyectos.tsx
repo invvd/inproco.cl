@@ -13,6 +13,7 @@ function Proyectos() {
     <section className="text-neutral-900 bg-gradient-to-br from-neutral-100 py-10 to bg-neutral-400 flex flex-col items-center">
       <div className="flex justify-center items-center gap-2">
         <Image
+          loading="lazy"
           alt="Insignia de Inproco"
           className="drop-shadow-md -translate-y-0.5 w-10 sm:w-12"
           src={"/logos/badge-gray.webp"}
@@ -35,6 +36,7 @@ function Proyectos() {
             className="group flex flex-col justify-center items-center size-full relative bg-black"
           >
             <Image
+              loading="lazy"
               alt=""
               className="group-hover:scale-105 size-full absolute object-cover opacity-30 group-hover:opacity-[15%] transition duration-300 group-hover:blur-xs"
               src={"/images/nosotros.webp"}
@@ -54,6 +56,7 @@ function Proyectos() {
             className="group flex flex-col justify-center items-center size-full relative bg-black"
           >
             <Image
+              loading="lazy"
               alt=""
               className="group-hover:scale-105 size-full absolute object-cover opacity-30 group-hover:opacity-[15%] transition duration-300 group-hover:blur-xs"
               src={"/images/nosotros.webp"}
@@ -73,6 +76,7 @@ function Proyectos() {
             className="group flex flex-col justify-center items-center size-full relative bg-black"
           >
             <Image
+              loading="lazy"
               alt=""
               className="group-hover:scale-105 size-full absolute object-cover opacity-30 group-hover:opacity-[15%] transition duration-300 group-hover:blur-xs"
               src={"/images/nosotros.webp"}
