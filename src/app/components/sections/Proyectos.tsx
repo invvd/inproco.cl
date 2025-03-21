@@ -21,7 +21,7 @@ function Proyectos() {
           height={50}
         />
         <h2
-          className={`${monument.className} text-shadow font-bold uppercase text-center text-4xl sm:text-5xl`}
+          className={`${monument.className} text-shadow font-bold uppercase text-center text-4xl xs:text-5xl`}
         >
           Proyectos
         </h2>
