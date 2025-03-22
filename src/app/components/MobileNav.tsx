@@ -1,5 +1,8 @@
 import { IconX } from "@tabler/icons-react";
 import Link from "next/link";
+import Facebook from "./icons/Facebook";
+import LinkedIn from "./icons/LinkedIn";
+import Instagram from "./icons/Instagram";
 
 type MobileNavProps = {
   secciones: {
@@ -38,6 +41,20 @@ export function MobileNav({
               <Link href={url}>{nombre}</Link>
             </li>
           ))}
+          <li className="flex space-x-4">
+            <Link className="group" href="https://www.facebook.com/inproco.cl/">
+              <Facebook className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+            </Link>
+            <Link
+              className="group"
+              href="https://www.linkedin.com/company/inproco-ltda"
+            >
+              <LinkedIn className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+            </Link>
+            <Link className="group" href="https://www.facebook.com/inproco.cl/">
+              <Instagram className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

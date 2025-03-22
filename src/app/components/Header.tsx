@@ -4,6 +4,9 @@ import { MobileNav } from "./MobileNav";
 import Link from "next/link";
 import { IconMenu } from "@tabler/icons-react";
 import { useState } from "react";
+import LinkedIn from "./icons/LinkedIn";
+import Facebook from "./icons/Facebook";
+import Instagram from "./icons/Instagram";
 
 const secciones = [
   {
@@ -20,7 +23,7 @@ const secciones = [
   },
   {
     nombre: "Servicios",
-    url: "/Servicios",
+    url: "/servicios",
   },
   {
     nombre: "Contacto",
@@ -56,7 +59,7 @@ export function Header() {
         </button>
 
         <nav className="hidden md:block">
-          <ul className="[&>li]:hover:text-secondary [&>li]:transition flex space-x-4">
+          <ul className="[&>li]:hover:text-secondary [&>li]:h-fit [&>li]:transition flex items-center space-x-4">
             {secciones.map(({ nombre, url }) => (
               <li key={nombre}>
                 <Link href={url}>{nombre}</Link>
@@ -64,6 +67,21 @@ export function Header() {
             ))}
           </ul>
         </nav>
+
+        <div className="hidden md:flex space-x-4">
+          <Link className="group" href="https://www.facebook.com/inproco.cl/">
+            <Facebook className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+          </Link>
+          <Link
+            className="group"
+            href="https://www.linkedin.com/company/inproco-ltda"
+          >
+            <LinkedIn className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+          </Link>
+          <Link className="group" href="https://www.facebook.com/inproco.cl/">
+            <Instagram className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+          </Link>
+        </div>
       </header>
 
       <MobileNav
