@@ -10,7 +10,7 @@ const monument = localFont({
 
 function Proyectos() {
   return (
-    <section className="text-neutral-900 bg-gradient-to-br from-neutral-100 py-10 to bg-neutral-400 flex flex-col items-center">
+    <section className="text-neutral-900 bg-gradient-to-br from-neutral-100 pt-10 to bg-neutral-400 flex flex-col items-center">
       <div className="flex justify-center items-center gap-2">
         <Image
           loading="lazy"
@@ -21,7 +21,7 @@ function Proyectos() {
           height={50}
         />
         <h2
-          className={`${monument.className} text-shadow font-bold uppercase text-center text-4xl xs:text-5xl`}
+          className={`${monument.className} font-bold uppercase text-center text-4xl xs:text-5xl`}
         >
           Proyectos
         </h2>
@@ -44,7 +44,7 @@ function Proyectos() {
               height={500}
             />
             <h3
-              className={`z-10 text-xl text-shadow text-primary ${monument.className} uppercase text-center`}
+              className={`z-10 text-xl text-shadow text-secondary ${monument.className} uppercase text-center`}
             >
               Integración
             </h3>
@@ -64,7 +64,7 @@ function Proyectos() {
               height={500}
             />
             <h3
-              className={`z-10 text-xl text-shadow text-primary ${monument.className} uppercase text-center`}
+              className={`z-10 text-xl text-shadow text-secondary ${monument.className} uppercase text-center`}
             >
               Ingeniería
             </h3>
@@ -84,7 +84,7 @@ function Proyectos() {
               height={500}
             />
             <h3
-              className={`z-10 text-xl text-shadow text-primary ${monument.className} uppercase text-center`}
+              className={`z-10 text-xl text-shadow text-secondary ${monument.className} uppercase text-center`}
             >
               Mecánica
             </h3>
@@ -103,7 +103,7 @@ function Proyectos() {
               height={500}
             />
             <h3
-              className={`z-10 text-xl text-shadow text-primary ${monument.className} uppercase text-center`}
+              className={`z-10 text-xl text-shadow text-secondary ${monument.className} uppercase text-center`}
             >
               Servicios en terreno
             </h3>
