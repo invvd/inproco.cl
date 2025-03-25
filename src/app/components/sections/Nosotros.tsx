@@ -9,27 +9,27 @@ const monument = localFont({
 
 export default function Nosotros() {
   return (
-    <section className="from-neutral-950 to-neutral-800 bg-gradient-to-b">
-      <div className="flex justify-center items-center pt-10">
-        <Image
-          loading="eager"
-          draggable={false}
-          className="w-[300px]"
-          src="/logos/logo-full-white.webp"
-          alt="Logo de Inproco en blanco"
-          width={200}
-          height={200}
-        />
-      </div>
-      <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid lg:grid-cols-2 lg:gap-20 ">
+    <section className="from-neutral-800 flex flex-col justify-center items-center to-black/80 bg-gradient-to-br">
+      <Image
+        loading="eager"
+        draggable={false}
+        className="w-[300px] mt-10"
+        src="/logos/logo-full-white.webp"
+        alt="Logo de Inproco en blanco"
+        width={200}
+        height={200}
+      />
+
+      <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid lg:grid-cols-2 max-w-[1300px] lg:gap-20 ">
         <motion.img
+          alt="Foto de la oficina de Inproco"
           loading="lazy"
           draggable={false}
           src="/images/nosotros.webp"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 100, scale: 1 }}
           viewport={{ once: true }}
-          className="aspect-[4/3] object-cover mb-10 max-w-[400px] lg:max-w-[500px] flex rounded-xl shadow-black/50 shadow-xl justify-center items-center w-full"
+          className="aspect-square object-cover max-w-[400px] flex rounded-xl shadow-black/50 shadow-xl justify-center items-center w-full mb-20"
         />
         <motion.div
           initial={{ opacity: 0 }}
