@@ -15,11 +15,11 @@ const secciones = [
   },
   {
     nombre: "Nosotros",
-    url: "/nosotros",
+    url: "#nosotros",
   },
   {
     nombre: "Proyectos",
-    url: "/proyectos",
+    url: "#proyectos",
   },
   {
     nombre: "Servicios",
@@ -27,7 +27,7 @@ const secciones = [
   },
   {
     nombre: "Contacto",
-    url: "/contacto",
+    url: "#contacto",
   },
 ];
 
@@ -36,7 +36,7 @@ export function Header() {
 
   return (
     <>
-      <header className="z-10 backdrop-brightness-75 flex fixed w-auto h-16 justify-between items-center p-4 rounded-lg top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm">
+      <header className="z-20 backdrop-brightness-75 flex fixed w-auto h-16 justify-between items-center p-4 rounded-lg top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm text-lg">
         <Link className="hover:scale-105 transition" href="/">
           <Image
             draggable={false}
