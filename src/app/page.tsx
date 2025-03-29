@@ -1,8 +1,8 @@
-import Contacto from "./components/sections/Contacto";
-import Hero from "./components/sections/Hero";
-import Nosotros from "./components/sections/Nosotros";
-import Proyectos from "./components/sections/Proyectos";
-import Servicios from "./components/sections/Servicios";
+import Contacto from "./sections/Contacto";
+import Hero from "./sections/Hero";
+import Nosotros from "./sections/Nosotros";
+import Proyectos from "./sections/Proyectos";
+import Servicios from "./sections/Servicios";
 
 export default function Home() {
   return (
