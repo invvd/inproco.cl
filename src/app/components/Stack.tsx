@@ -1,4 +1,5 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 interface CardRotateProps {
@@ -50,7 +51,6 @@ interface StackProps {
 }
 
 export default function Stack({
-  randomRotation = false,
   sensitivity = 200,
   cardDimensions = { width: 208, height: 208 },
   cardsData = [],
@@ -100,10 +100,6 @@ export default function Stack({
       }}
     >
       {cards.map((card, index) => {
-        const randomRotate = randomRotation
-          ? Math.random() * 10 - 5 // Random degree between -5 and 5
-          : 0;
-
         return (
           <CardRotate
             key={card.id}
@@ -129,7 +125,9 @@ export default function Stack({
                 height: cardDimensions.height,
               }}
             >
-              <img
+              <Image
+                width={cardDimensions.width}
+                height={cardDimensions.height}
                 src={card.img}
                 alt={`card-${card.id}`}
                 className="w-full h-full object-cover pointer-events-none"
