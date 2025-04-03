@@ -30,7 +30,7 @@ function Proyectos() {
           Proyectos
         </h2>
       </div>
-      <p className="text-center max-w-[80vw]">
+      <p className="text-center mt-2 max-w-[80vw]">
         Descubre nuestros proyectos y enamórate de cada detalle! 🏗️✨
       </p>
       {/* <video
