@@ -1,9 +1,4 @@
 "use client";
-import localFont from "next/font/local";
-import Instagram from "../components/icons/Instagram";
-import Facebook from "../components/icons/Facebook";
-import LinkedIn from "../components/icons/LinkedIn";
-import { motion } from "motion/react";
 import { IconBuilding, IconMail } from "@tabler/icons-react";
 import Link from "next/link";
 import FormInput from "../components/FormInput";
