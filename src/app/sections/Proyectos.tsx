@@ -43,7 +43,7 @@ function Proyectos() {
         className="absolute top-0 left-0 w-full h-full object-cover opacity-150 grayscale contrast-150"
       /> */}
       <div
-        className={`p-10 w-full max-w-[1050px] grid grid-flow-row grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4 min-h-80 [&>div]:rounded-lg [&>div]:h-52 [&>div]:overflow-hidden [&>div]:shadow-md text-white/90`}
+        className={`p-10 w-full max-w-[1050px] grid grid-flow-row grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-5 [&>div]:rounded-sm min-h-80 [&>div]:h-52 [&>div]:overflow-hidden [&>div]:shadow-md text-white/90`}
       >
         <div>
           <Link

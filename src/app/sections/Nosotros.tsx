@@ -23,17 +23,7 @@ export default function Nosotros() {
         height={200}
       />
 
-      <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid lg:grid-cols-2 max-w-[1300px] lg:gap-20 ">
-        <motion.img
-          alt="Foto de la oficina de Inproco"
-          loading="lazy"
-          draggable={false}
-          src="/images/nosotros.webp"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 100, scale: 1 }}
-          viewport={{ once: true }}
-          className="aspect-square object-cover max-w-[400px] flex rounded-xl shadow-black/50 shadow-xl justify-center items-center w-full mb-20"
-        />
+      <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid place-content-center lg:grid-cols-2 max-w-[1300px] lg:gap-20 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100 }}
@@ -46,7 +36,7 @@ export default function Nosotros() {
           >
             Nosotros
           </h2>
-          <p className="text-[#c4cccf] text-pretty max-w-[500px] text-sm sm:text-base flex flex-col space-y-6">
+          <p className="text-[#c4cccf] text-left text-pretty max-w-[500px] text-sm sm:text-base flex flex-col space-y-6">
             <span>
               Somos una empresa de{" "}
               <strong className="text-primary">
@@ -102,6 +92,16 @@ export default function Nosotros() {
             </span>
           </p>
         </motion.div>
+        <motion.img
+          alt="Foto de la oficina de Inproco"
+          loading="lazy"
+          draggable={false}
+          src="/images/nosotros.webp"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 100, scale: 1 }}
+          viewport={{ once: true }}
+          className="max-h-[500px] object-cover max-w-[400px] flex shadow-black/50 shadow-xl justify-center items-center w-full mb-20"
+        />
       </div>
     </section>
   );
