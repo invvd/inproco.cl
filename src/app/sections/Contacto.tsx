@@ -13,14 +13,12 @@ function Contacto() {
   return (
     <section
       id="contacto"
-      className="justify-center w-full flex bg-gradient-to-br from-black/80 via-black/80 to-secondary/20"
+      className="justify-center w-full flex py-20 lg:p-0 lg:flex-row flex-col bg-gradient-to-br from-black/80 via-black/80 to-secondary/20"
     >
-      <div className="text-neutral-300 p-20 border-r-[1px] border-neutral-900 bg-neutral-950 w-1/2 flex flex-col gap-10">
-        <div>
+      <div className="text-neutral-300 w-full lg:w-1/2 items-center lg:items-start px-40 lg:py-20 lg:border-r-[1px] border-neutral-900 lg:bg-neutral-950 flex flex-col gap-10">
+        <div className="text-center lg:text-left">
           <h2 className="font-bold text-5xl mb-1 text-white">Contáctanos</h2>
-          <p className="text-lg">
-            ¿Tienes dudas? ¡Estamos aquí para ayudarte! 👋📞
-          </p>
+          <p className="text-lg">¿Tienes dudas? ¡Estamos aquí para ayudarte!</p>
         </div>
         <div className="gap-4 flex flex-col">
           <Link
@@ -30,7 +28,7 @@ function Contacto() {
           >
             <IconBuilding
               stroke={1}
-              className="size-7 object-cover group-hover:text-white transition"
+              className="size-7 object-fill group-hover:text-white transition"
             />
             <div className="flex flex-col group-hover:text-white transition">
               <span>Cam. La Vara 03395, San Bernardo</span>
@@ -45,7 +43,7 @@ function Contacto() {
           >
             <IconMail
               stroke={1}
-              className="size-7 object-cover group-hover:text-white transition"
+              className="size-7 object-fill group-hover:text-white transition"
             />
             <div className="flex flex-col group-hover:text-white transition">
               <span>{correo}</span>
@@ -59,12 +57,12 @@ function Contacto() {
             src={"/logos/logo-full-white.webp"}
             width={500}
             height={100}
-            className="object-cover"
+            className="object-cover hidden"
           />
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-20 w-1/2">
-        <form className="flex flex-col gap-8 px-20">
+      <div className="flex lg:py-20 flex-col gap-4 px-20 w-full lg:w-1/2 justify-center items-center ">
+        <form className="flex flex-col gap-8 max-w-xl">
           <FormInput label="Nombre" placeholder="Daniel Mass" />
           <FormInput
             label="Correo electrónico"
