@@ -11,32 +11,43 @@ export default function Nosotros() {
   return (
     <section
       id="nosotros"
-      className="from-neutral-900 via-black flex flex-col justify-center items-center to-neutral-900 bg-gradient-to-br"
+      className="flex flex-col bg-black/80 p-20 justify-center items-center"
     >
-      <Image
-        loading="eager"
+      <motion.img
+        alt="Foto de la oficina de Inproco"
+        loading="lazy"
         draggable={false}
-        className="w-[300px] mt-10"
-        src="/logos/logo-full-white.webp"
-        alt="Logo de Inproco en blanco"
-        width={200}
-        height={200}
+        src="/images/nosotros.webp"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 100, scale: 1 }}
+        viewport={{ once: true }}
+        className="object-cover flex h-screen blur-xs w-screen fixed top-0 -z-20"
       />
-
-      <div className="px-10 lg:px-20 py-10 space-y-10 text-white place-items-center grid place-content-center lg:grid-cols-2 max-w-[1300px] lg:gap-20 ">
+      <div className="px-10 lg:px-20 space-y-10 text-white max-w-[1000px] lg:gap-20 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ delay: 0.1 }}
           className="text-center flex w-full flex-col items-center justify-center"
         >
-          <h2
-            className={`text-shadow ${monument.className} font-bold uppercase text-center text-3xl mb-5`}
-          >
-            Nosotros
-          </h2>
-          <p className="text-[#c4cccf] text-left text-pretty max-w-[500px] text-sm sm:text-base flex flex-col space-y-6">
+          <div className="flex justify-center items-center gap-2 mb-5">
+            <Image
+              draggable={false}
+              loading="lazy"
+              alt="Insignia de Inproco"
+              className="drop-shadow-md -translate-y-0.5 object-cover h-full"
+              src={"/logos/badge-white.webp"}
+              width={50}
+              height={50}
+            />
+            <h2
+              className={`${monument.className} font-bold uppercase text-center text-3xl md:text-4xl lg:text-5xl z-10`}
+            >
+              Nosotros
+            </h2>
+          </div>
+          <p className="text-[#c4cccf] text-left text-pretty text-sm sm:text-base flex flex-col space-y-6">
             <span>
               Somos una empresa de{" "}
               <strong className="text-primary">
@@ -91,17 +102,16 @@ export default function Nosotros() {
               </strong>
             </span>
           </p>
+          <Image
+            loading="eager"
+            draggable={false}
+            className="w-[300px] mt-10"
+            src="/logos/logo-full-white.webp"
+            alt="Logo de Inproco en blanco"
+            width={200}
+            height={200}
+          />
         </motion.div>
-        <motion.img
-          alt="Foto de la oficina de Inproco"
-          loading="lazy"
-          draggable={false}
-          src="/images/nosotros.webp"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 100, scale: 1 }}
-          viewport={{ once: true }}
-          className="max-h-[500px] object-cover max-w-[400px] flex shadow-black/50 shadow-xl justify-center items-center w-full mb-20"
-        />
       </div>
     </section>
   );
