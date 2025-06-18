@@ -8,7 +8,7 @@ export default function Hero({ videoSrc }: HeroProps) {
       <video
         controlsList="nodownload"
         loop
-        className="opacity-75 aspect-[4/3] max-h-svh -z-10 top-0 w-full object-cover"
+        className="aspect-[4/3] max-h-svh -z-10 top-0 w-full object-cover"
         autoPlay
         muted
         playsInline
