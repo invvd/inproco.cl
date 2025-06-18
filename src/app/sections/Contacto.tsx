@@ -30,7 +30,7 @@ function Contacto() {
               stroke={1}
               className="size-7 object-fill group-hover:text-white transition"
             />
-            <div className="flex flex-col group-hover:text-white transition">
+            <div className="flex flex-col w-fit group-hover:text-white transition">
               <span>Cam. La Vara 03395, San Bernardo</span>
               <span>Región Metropolitana</span>
             </div>
@@ -38,14 +38,14 @@ function Contacto() {
 
           <Link
             href={`mailto:${correo}`}
-            className="flex gap-4 items-center group"
+            className="flex gap-4 w-fit items-center group"
             target="_blank"
           >
             <IconMail
               stroke={1}
               className="size-7 object-fill group-hover:text-white transition"
             />
-            <div className="flex flex-col group-hover:text-white transition">
+            <div className="flex flex-col w-fit group-hover:text-white transition">
               <span>{correo}</span>
             </div>
           </Link>
