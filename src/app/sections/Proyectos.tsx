@@ -1,11 +1,10 @@
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
-
+import SectionTitle from "../components/SectionTitle";
 const monument = localFont({
   src: "../fonts/Monument.woff2",
 });
-
 // PENDIENTE: Reemplazar fotos
 
 function Proyectos() {
@@ -14,22 +13,7 @@ function Proyectos() {
       id="proyectos"
       className="text-neutral-900 bg-neutral-200 flex px-10 lg:px-20 py-20 flex-col relative items-center"
     >
-      <div className="flex justify-center items-center gap-2">
-        <Image
-          draggable={false}
-          loading="lazy"
-          alt="Insignia de Inproco"
-          className="drop-shadow-md -translate-y-0.5 object-cover h-full invert"
-          src={"/logos/badge-white.webp"}
-          width={50}
-          height={50}
-        />
-        <h2
-          className={`${monument.className} font-bold uppercase text-center text-3xl md:text-4xl lg:text-5xl z-10`}
-        >
-          Nosotros
-        </h2>
-      </div>
+      <SectionTitle invertBadgeColor>Proyectos</SectionTitle>
       <p className="text-center mb-10 max-w-[80vw]">
         Descubre nuestros proyectos y enamórate de cada detalle!
       </p>
