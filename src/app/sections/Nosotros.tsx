@@ -1,29 +1,24 @@
 "use client";
 import { motion } from "motion/react";
-import localFont from "next/font/local";
 import Image from "next/image";
-
-const monument = localFont({
-  src: "../fonts/Monument.woff2",
-});
+import SectionTitle from "../components/SectionTitle";
 
 export default function Nosotros() {
   return (
     <section
       id="nosotros"
-      className="flex flex-col bg-black/80 p-20 justify-center items-center"
+      className="flex flex-col bg-black/80 py-20 px-10 md:px-20 justify-center items-center"
     >
-      <motion.img
+      <Image
         alt="Foto de la oficina de Inproco"
         loading="lazy"
         draggable={false}
         src="/images/nosotros.webp"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 100, scale: 1 }}
-        viewport={{ once: true }}
+        width={1134}
+        height={2016}
         className="object-cover flex h-screen blur-xs w-screen fixed top-0 -z-20"
       />
-      <div className="px-10 lg:px-20 space-y-10 text-white max-w-[1000px] lg:gap-20 ">
+      <div className="space-y-10 text-white max-w-[1000px] lg:gap-20">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100 }}
@@ -31,22 +26,7 @@ export default function Nosotros() {
           transition={{ delay: 0.1 }}
           className="text-center flex w-full flex-col items-center justify-center"
         >
-          <div className="flex justify-center items-center gap-2 mb-5">
-            <Image
-              draggable={false}
-              loading="lazy"
-              alt="Insignia de Inproco"
-              className="drop-shadow-md -translate-y-0.5 object-cover h-full"
-              src={"/logos/badge-white.webp"}
-              width={50}
-              height={50}
-            />
-            <h2
-              className={`${monument.className} font-bold uppercase text-center text-3xl md:text-4xl lg:text-5xl z-10`}
-            >
-              Nosotros
-            </h2>
-          </div>
+          <SectionTitle className="mb-10">Nosotros</SectionTitle>
           <p className="text-[#c4cccf] text-left text-pretty text-sm sm:text-base flex flex-col space-y-6">
             <span>
               Somos una empresa de{" "}
