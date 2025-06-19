@@ -61,7 +61,7 @@ function Contacto() {
           />
         </div>
       </div>
-      <div className="flex lg:py-20 flex-col gap-4 px-20 w-full lg:w-1/2 justify-center items-center ">
+      <div className="flex lg:py-20 flex-col gap-4 px-20 w-full lg:w-1/2 justify-center items-center bg-gradient-to-br from-neutral-950  to-neutral-900">
         <form className="flex flex-col gap-8 max-w-xl">
           <FormInput label="Nombre" placeholder="Daniel Mass" />
           <FormInput
