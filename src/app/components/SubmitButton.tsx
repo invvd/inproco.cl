@@ -8,7 +8,10 @@ type Props = {
 export const Button = ({ label }: Props) => {
   return (
     <StyledWrapper>
-      <button id="bottone1">
+      <button
+        className="hover:bg-secondary outline-2 outline-secondary bg-transparent"
+        id="bottone1"
+      >
         <strong>{label}</strong>
       </button>
     </StyledWrapper>
@@ -21,20 +24,23 @@ const StyledWrapper = styled.div`
     padding-right: 33px;
     padding-bottom: 16px;
     padding-top: 16px;
-
-    background: #febf00;
     border: none;
     font-family: inherit;
     text-align: center;
     cursor: pointer;
     transition: 0.4s;
-    color: #000;
+    color: #fff;
     width: 150px;
+  }
+
+  #bottone1:hover {
+    background-color: --secondary;
+    color: #000;
+    transform: scale(1.05);
   }
 
   #bottone1:active {
     transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #c3d900;
   }
 `;
 
