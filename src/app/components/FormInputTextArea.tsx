@@ -12,7 +12,7 @@ export const Input = ({ label, placeholder }: Props) => {
       <input
         type="text"
         placeholder={placeholder}
-        className="outline-none border-b border-white p-1"
+        className="outline-none border-b border-secondary p-1"
       />
     </label>
   );
