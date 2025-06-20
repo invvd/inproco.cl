@@ -21,7 +21,7 @@ const StyledWrapper = styled.div`
     padding-right: 33px;
     padding-bottom: 16px;
     padding-top: 16px;
-    border-radius: 9px;
+
     background: #febf00;
     border: none;
     font-family: inherit;
@@ -29,11 +29,7 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     transition: 0.4s;
     color: #000;
-    width: 100%;
-  }
-
-  #bottone1:hover {
-    box-shadow: 7px 5px 56px -14px #c3d900;
+    width: 150px;
   }
 
   #bottone1:active {

@@ -4,7 +4,6 @@ import Link from "next/link";
 import FormInput from "../components/FormInput";
 import SubmitButton from "../components/SubmitButton";
 import FormInputTextArea from "../components/FormInputTextArea";
-import Image from "next/image";
 
 const correo = "contacto@inproco.cl";
 
@@ -13,17 +12,17 @@ function Contacto() {
   return (
     <section
       id="contacto"
-      className="justify-center w-full flex py-20 lg:p-0 lg:flex-row flex-col bg-gradient-to-br from-black/80 via-black/80 to-secondary/20"
+      className="w-full grid grid-rows-[auto_auto] grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 bg-gradient-to-br from-black/80 via-black/80 to-secondary/20 "
     >
-      <div className="text-neutral-300 w-full lg:w-1/2 items-center lg:items-start px-40 lg:py-20 lg:border-r-[1px] border-neutral-900 lg:bg-neutral-950 flex flex-col gap-10">
-        <div className="text-center lg:text-left">
+      <div className="text-neutral-300 py-20 w-full h-full items-center lg:border-r-[1px] border-neutral-900 bg-neutral-950 flex flex-col gap-10">
+        <div className="">
           <h2 className="font-bold text-5xl mb-1 text-white">Contáctanos</h2>
           <p className="text-lg">¿Tienes dudas? ¡Estamos aquí para ayudarte!</p>
         </div>
         <div className="gap-4 flex flex-col">
           <Link
             href={"https://maps.app.goo.gl/WB6YB8GWYsBrs6QZ8"}
-            className="flex gap-4 group"
+            className="flex gap-4 group w-fit"
             target="_blank"
           >
             <IconBuilding
@@ -50,19 +49,9 @@ function Contacto() {
             </div>
           </Link>
         </div>
-        <div>
-          <Image
-            alt="Logo Inproco"
-            draggable={false}
-            src={"/logos/logo-full-white.webp"}
-            width={500}
-            height={100}
-            className="object-cover hidden"
-          />
-        </div>
       </div>
-      <div className="flex lg:py-20 flex-col gap-4 px-20 w-full lg:w-1/2 justify-center items-center bg-gradient-to-br from-neutral-950  to-neutral-900">
-        <form className="flex flex-col gap-8 max-w-xl">
+      <div className="flex flex-col gap-4 w-full justify-center items-center bg-gradient-to-br from-neutral-950  to-neutral-800 py-20">
+        <form className="flex flex-col gap-8 w-full items-center max-w-md">
           <FormInput label="Nombre" placeholder="Daniel Mass" />
           <FormInput
             label="Correo electrónico"

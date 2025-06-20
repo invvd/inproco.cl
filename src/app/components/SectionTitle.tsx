@@ -20,7 +20,7 @@ function SectionTitle({
   return (
     <div className={"flex justify-center items-center gap-2 " + className}>
       <BadgeInproco className={invertBadgeColor ? "invert" : ""} />
-      <h2 className={`${monument.className}`}>{children}</h2>
+      <h2 className={`${monument.className} text-center`}>{children}</h2>
     </div>
   );
 }
