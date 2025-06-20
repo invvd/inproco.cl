@@ -52,7 +52,7 @@ function Contacto() {
       </div>
       <div className="flex flex-col gap-4 w-full justify-center items-center bg-gradient-to-br from-neutral-950  to-neutral-800 py-20">
         <form className="flex flex-col gap-8 w-full items-center max-w-md">
-          <FormInput label="Nombre" placeholder="Daniel Mass" />
+          <FormInput label="Nombre" placeholder="Jorge Sánchez" />
           <FormInput
             label="Correo electrónico"
             placeholder="ejemplo@mail.com"
