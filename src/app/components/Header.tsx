@@ -36,17 +36,14 @@ export function Header() {
 
   return (
     <>
-<<<<<<< HEAD
+
       <header className="z-20 fixed w-auto h-20 flex justify-between items-center px-6 py-3 rounded-2xl top-4 left-4 right-4 max-w-[calc(100%-2rem)] border border-white/20 shadow-2xl backdrop-blur-md bg-white/10">
         {/* Logo con efecto mejorado */}
         <Link
           className="hover:scale-110 transition-all duration-300 hover:drop-shadow-lg"
           href="/"
         >
-=======
-      <header className="z-20 backdrop-brightness-75 flex fixed w-auto h-12 justify-between items-center rounded-xs p-4 top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm text-lg">
-        <Link className="hover:scale-105 transition" href="/">
->>>>>>> 163b8d7eee36ff247c4c83e6a3fbab0549307d26
+
           <Image
             draggable={false}
             width={120}
