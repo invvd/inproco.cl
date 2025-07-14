@@ -98,7 +98,7 @@ body {
 }
 
 h2 {
-  @apply tracking-wider font-bold uppercase text-center text-3xl md:text-4xl lg:text-5xl;
+  @apply tracking-wider font-bold uppercase text-5xl;
 }
 
 /* Smooth scroll enhancement */

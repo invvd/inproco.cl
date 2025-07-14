@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 import FormInput from "../components/FormInput";
 import SubmitButton from "../components/SubmitButton";
 import FormInputTextArea from "../components/FormInputTextArea";
-import Image from "next/image";
 
 const correo = "contacto@inproco.cl";
 const telefono = "+56 9 8765 4321";
@@ -14,6 +13,7 @@ function Contacto() {
   return (
     <section
       id="contacto"
+<<<<<<< HEAD
       className="w-full relative overflow-hidden bg-gradient-to-br from-primary/20 via-black/90 to-black/95"
     >
       <div className="flex flex-col lg:flex-row">
@@ -35,6 +35,30 @@ function Contacto() {
                 ideas en realidad.
               </p>
             </motion.div>
+=======
+      className="w-full grid grid-rows-[auto_auto] grid-cols-1 lg:grid-rows-1 lg:grid-cols-2 bg-gradient-to-br from-black/80 via-black/80 to-secondary/20 "
+    >
+      <div className="text-neutral-300 py-20 w-full h-full items-center lg:border-r-[1px] border-neutral-900 bg-neutral-950 flex flex-col gap-10">
+        <div className="">
+          <h2 className="font-bold text-5xl mb-1 text-white">Contáctanos</h2>
+          <p className="text-lg">¿Tienes dudas? ¡Estamos aquí para ayudarte!</p>
+        </div>
+        <div className="gap-4 flex flex-col">
+          <Link
+            href={"https://maps.app.goo.gl/WB6YB8GWYsBrs6QZ8"}
+            className="flex gap-4 group w-fit"
+            target="_blank"
+          >
+            <IconBuilding
+              stroke={1}
+              className="size-7 object-fill group-hover:text-white transition"
+            />
+            <div className="flex flex-col w-fit group-hover:text-white transition">
+              <span>Cam. La Vara 03395, San Bernardo</span>
+              <span>Región Metropolitana</span>
+            </div>
+          </Link>
+>>>>>>> 163b8d7eee36ff247c4c83e6a3fbab0549307d26
 
             <div className="space-y-6 mb-8">
               <motion.div
@@ -134,6 +158,7 @@ function Contacto() {
             </motion.div>
           </div>
         </div>
+<<<<<<< HEAD
 
         {/* Contact Form */}
         <div className="w-full lg:w-1/2 relative flex items-center justify-center p-8 md:p-10 lg:p-12">
@@ -225,6 +250,20 @@ function Contacto() {
           </motion.div>
         </div>
       </div>
+=======
+      </div>
+      <div className="flex flex-col gap-4 w-full justify-center items-center bg-gradient-to-br from-neutral-950  to-neutral-800 py-20">
+        <form className="flex flex-col gap-8 w-full items-center max-w-md">
+          <FormInput label="Nombre" placeholder="Jorge Sánchez" />
+          <FormInput
+            label="Correo electrónico"
+            placeholder="ejemplo@mail.com"
+          />
+          <FormInputTextArea label="Mensaje" placeholder="Mensaje..." />
+          <SubmitButton label="Enviar" />
+        </form>
+      </div>
+>>>>>>> 163b8d7eee36ff247c4c83e6a3fbab0549307d26
     </section>
   );
 }
