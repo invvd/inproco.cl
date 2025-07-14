@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.className} max-w-screen antialiased`}>
         <Header />
         {children}
 

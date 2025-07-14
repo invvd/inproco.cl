@@ -17,7 +17,7 @@ const proyectos = [
     client: "CODELCO",
     description:
       "Sistema automatizado de control de procesos mineros con IoT y dashboard en tiempo real.",
-    image: "/images/lightroom.jpg",
+    image: "/images/ingenieria.jpg",
     category: "Automatización",
     fullDescription:
       "Implementación completa de sistema automatizado de control de procesos para optimización de la extracción de mineral. Incluye sensores IoT distribuidos, dashboard en tiempo real para monitoreo 24/7, sistemas de seguridad avanzados y algoritmos de machine learning para predicción de mantenimiento.",
@@ -229,7 +229,6 @@ function Proyectos() {
     (typeof proyectos)[0] | null
   >(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Obtener años únicos y ordenarlos
@@ -265,43 +264,15 @@ function Proyectos() {
   };
 
   const openModal = (proyecto: (typeof proyectos)[0]) => {
-    // Guardar la posición actual del scroll
-    const currentScrollY = window.scrollY;
-    setScrollPosition(currentScrollY);
-
     setSelectedProject(proyecto);
     setIsModalOpen(true);
-
-    // Prevent background scroll sin mover la página
-    document.body.style.overflow = "hidden";
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${currentScrollY}px`;
-    document.body.style.width = "100%";
+    document.body.style.overflow = "hidden"; // Prevent background scroll
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedProject(null);
-
-    // Restaurar scroll a la posición guardada
-    document.body.style.overflow = "";
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.width = "";
-
-    // Usar múltiples métodos para asegurar la restauración
-    requestAnimationFrame(() => {
-      window.scrollTo({
-        top: scrollPosition,
-        left: 0,
-        behavior: "instant",
-      });
-
-      // Backup con setTimeout
-      setTimeout(() => {
-        window.scrollTo(0, scrollPosition);
-      }, 0);
-    });
+    document.body.style.overflow = "unset"; // Restore scroll
   };
 
   return (
@@ -316,7 +287,7 @@ function Proyectos() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <SectionTitle invertBadgeColor>Proyectos</SectionTitle>
+        <SectionTitle invertBadgeColor>Proyectos Destacados</SectionTitle>
         <p className="text-center text-lg md:text-xl max-w-3xl mx-auto mt-4 text-gray-700">
           Algunos de nuestros proyectos que han transformado la industria
           chilena
@@ -440,17 +411,9 @@ function Proyectos() {
             {/* Scroll container */}
             <div
               ref={scrollContainerRef}
-              className="overflow-x-auto scrollbar-hide pb-4 px-14 relative"
-              style={{
-                maxHeight: "480px",
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
-              }}
+              className="overflow-x-auto scrollbar-hide pb-4 px-14"
             >
-              <div
-                className="flex gap-6"
-                style={{ width: "max-content", minHeight: "460px" }}
-              >
+              <div className="flex gap-6" style={{ width: "max-content" }}>
                 {filteredProyectos.map((proyecto, index) => (
                   <motion.div
                     key={`${selectedYear || "all"}-${proyecto.id}`}
@@ -458,11 +421,11 @@ function Proyectos() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="group flex-shrink-0"
-                    style={{ width: "320px", height: "440px" }}
+                    style={{ width: "320px" }}
                   >
-                    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03] h-full flex flex-col">
+                    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:scale-[1.03] h-full">
                       {/* Project Image */}
-                      <div className="relative h-48 overflow-hidden flex-shrink-0">
+                      <div className="relative h-48 overflow-hidden">
                         <Image
                           src={proyecto.image}
                           alt={proyecto.title}
@@ -487,7 +450,7 @@ function Proyectos() {
                       </div>
 
                       {/* Project Content */}
-                      <div className="p-6 flex-1 flex flex-col">
+                      <div className="p-6">
                         <h3
                           className={`${monument.className} text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-2`}
                         >
@@ -498,14 +461,14 @@ function Proyectos() {
                           {proyecto.client}
                         </p>
 
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3 flex-1">
+                        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
                           {proyecto.description}
                         </p>
 
                         {/* Action Button */}
                         <button
                           onClick={() => openModal(proyecto)}
-                          className="w-full text-primary font-semibold text-sm hover:text-primary/80 transition-colors duration-300 flex items-center justify-center gap-2 py-2 border border-primary/20 rounded-lg hover:bg-primary/5 mt-auto"
+                          className="w-full text-primary font-semibold text-sm hover:text-primary/80 transition-colors duration-300 flex items-center justify-center gap-2 py-2 border border-primary/20 rounded-lg hover:bg-primary/5"
                         >
                           Ver detalles
                           <svg
@@ -634,36 +597,36 @@ function Proyectos() {
             className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
             onClick={closeModal}
           >
-            {/* Close Button - Outside Modal */}
-            <button
-              onClick={closeModal}
-              className="fixed top-4 right-4 z-60 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:scale-110"
-            >
-              <svg
-                className="w-6 h-6 text-gray-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-2xl shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-hidden flex flex-col"
+              className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Close Button */}
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg"
+              >
+                <svg
+                  className="w-6 h-6 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
               {/* Project Image */}
-              <div className="relative h-56 overflow-hidden rounded-t-2xl flex-shrink-0">
+              <div className="relative h-80 overflow-hidden rounded-t-2xl">
                 <Image
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -673,86 +636,74 @@ function Proyectos() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
                 {/* Badges */}
-                <div className="absolute top-4 left-4">
-                  <span className="bg-primary text-white px-3 py-1.5 rounded-full text-sm font-bold">
+                <div className="absolute top-6 left-6">
+                  <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
                     {selectedProject.year}
                   </span>
                 </div>
-                <div className="absolute top-4 right-4">
-                  <span className="bg-white/90 text-gray-800 px-3 py-1.5 rounded-full text-sm font-medium">
+                <div className="absolute top-6 right-16">
+                  <span className="bg-white/90 text-gray-800 px-4 py-2 rounded-full text-sm font-medium">
                     {selectedProject.category}
                   </span>
                 </div>
 
                 {/* Title Overlay */}
-                <div className="absolute bottom-4 left-4 right-4">
+                <div className="absolute bottom-6 left-6 right-6">
                   <h2
-                    className={`${monument.className} text-2xl md:text-3xl font-bold text-white mb-1`}
+                    className={`${monument.className} text-3xl md:text-4xl font-bold text-white mb-2`}
                   >
                     {selectedProject.title}
                   </h2>
-                  <p className="text-lg text-primary font-semibold bg-white/90 px-3 py-1 rounded-lg inline-block">
+                  <p className="text-xl text-primary font-semibold bg-white/90 px-3 py-1 rounded-lg inline-block">
                     {selectedProject.client}
                   </p>
                 </div>
               </div>
 
               {/* Content */}
-              <div
-                className="p-6 flex-1 overflow-y-auto scrollbar-hide"
-                style={{
-                  scrollbarWidth: "none",
-                  msOverflowStyle: "none",
-                }}
-              >
+              <div className="p-8">
                 {/* Description */}
-                <div className="mb-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
                     Descripción del Proyecto
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed text-lg">
                     {selectedProject.fullDescription}
                   </p>
                 </div>
 
                 {/* Project Details Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="text-xl font-bold text-primary mb-1">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                  <div className="bg-gray-50 rounded-xl p-6 text-center">
+                    <div className="text-2xl font-bold text-primary mb-2">
                       {selectedProject.duration}
                     </div>
-                    <div className="text-gray-600 font-medium text-sm">
-                      Duración
-                    </div>
+                    <div className="text-gray-600 font-medium">Duración</div>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="text-xl font-bold text-secondary mb-1">
+                  <div className="bg-gray-50 rounded-xl p-6 text-center">
+                    <div className="text-2xl font-bold text-secondary mb-2">
                       {selectedProject.team}
                     </div>
-                    <div className="text-gray-600 font-medium text-sm">
-                      Equipo
-                    </div>
+                    <div className="text-gray-600 font-medium">Equipo</div>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-4 text-center">
-                    <div className="text-xl font-bold text-primary mb-1">
+                  <div className="bg-gray-50 rounded-xl p-6 text-center">
+                    <div className="text-2xl font-bold text-primary mb-2">
                       {selectedProject.budget}
                     </div>
-                    <div className="text-gray-600 font-medium text-sm">
-                      Presupuesto
-                    </div>
+                    <div className="text-gray-600 font-medium">Presupuesto</div>
                   </div>
                 </div>
 
                 {/* Technologies */}
-                <div className="mb-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
                     Tecnologías Utilizadas
                   </h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-3">
                     {selectedProject.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-primary/10 text-primary px-3 py-1.5 rounded-full text-sm font-medium border border-primary/20"
+                        className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
                       >
                         {tech}
                       </span>
@@ -761,17 +712,17 @@ function Proyectos() {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t">
+                <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t">
                   <a
                     href="#contacto"
                     onClick={closeModal}
-                    className="flex-1 bg-primary hover:bg-primary/90 text-white font-semibold py-2.5 px-6 rounded-lg transition-all duration-300 text-center text-sm"
+                    className="flex-1 bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-center"
                   >
                     Solicitar Cotización Similar
                   </a>
                   <button
                     onClick={closeModal}
-                    className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-6 rounded-lg transition-all duration-300 text-sm"
+                    className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-300"
                   >
                     Cerrar
                   </button>

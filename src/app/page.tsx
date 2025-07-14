@@ -6,12 +6,12 @@ import Servicios from "./sections/Servicios";
 
 export default function Home() {
   return (
-    <>
+    <main className="overflow-hidden">
       <Hero videoSrc="/videos/bg.mp4" />
       <Nosotros />
-      <Proyectos />
       <Servicios />
+      <Proyectos />
       <Contacto />
-    </>
+    </main>
   );
 }

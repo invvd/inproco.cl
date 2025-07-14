@@ -1,5 +1,5 @@
+"use client";
 import React from "react";
-import styled from "styled-components";
 
 type Props = {
   label: string;
@@ -7,39 +7,28 @@ type Props = {
 
 export const Button = ({ label }: Props) => {
   return (
-    <StyledWrapper>
-      <button id="bottone1">
-        <strong>{label}</strong>
-      </button>
-    </StyledWrapper>
+    <button
+      type="submit"
+      className="w-full px-6 py-4 cursor-pointer bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-[0.98] group"
+    >
+      <span className="flex items-center justify-center gap-2">
+        {label}
+        <svg
+          className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+          />
+        </svg>
+      </span>
+    </button>
   );
 };
-
-const StyledWrapper = styled.div`
-  #bottone1 {
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    border-radius: 9px;
-    background: #febf00;
-    border: none;
-    font-family: inherit;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
-    color: #000;
-    width: 100%;
-  }
-
-  #bottone1:hover {
-    box-shadow: 7px 5px 56px -14px #c3d900;
-  }
-
-  #bottone1:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #c3d900;
-  }
-`;
 
 export default Button;

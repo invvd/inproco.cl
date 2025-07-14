@@ -36,50 +36,76 @@ export function Header() {
 
   return (
     <>
-      <header className="z-20 backdrop-brightness-75 flex fixed w-auto h-16 justify-between items-center p-4 rounded-lg top-2 left-2 right-2 max-w-[calc(100%-1rem)] backdrop-blur-sm text-lg">
-        <Link className="hover:scale-105 transition" href="/">
+      <header className="z-20 fixed w-auto h-20 flex justify-between items-center px-6 py-3 rounded-2xl top-4 left-4 right-4 max-w-[calc(100%-2rem)] border border-white/20 shadow-2xl backdrop-blur-md bg-white/10">
+        {/* Logo con efecto mejorado */}
+        <Link
+          className="hover:scale-110 transition-all duration-300 hover:drop-shadow-lg"
+          href="/"
+        >
           <Image
             draggable={false}
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             src={"/logos/logo-fade.webp"}
             alt="Logo de Inproco"
             loading="eager"
+            className="filter drop-shadow-md"
           />
         </Link>
 
+        {/* Botón móvil mejorado */}
         <button
           title="Menu"
-          className="md:hidden cursor-pointer hover:text-primary transition-colors"
+          className="md:hidden cursor-pointer text-white hover:text-primary transition-all duration-300 hover:scale-110 p-2 rounded-xl hover:bg-white/10"
           onClick={() => {
             setShowMenu(!showMenu);
           }}
         >
-          <IconMenu />
+          <IconMenu size={28} strokeWidth={2.5} />
         </button>
 
+        {/* Navegación desktop mejorada */}
         <nav className="hidden md:block">
-          <ul className="[&>li]:hover:text-secondary [&>li]:h-fit [&>li]:transition flex items-center space-x-4">
+          <ul className="flex items-center space-x-8">
             {secciones.map(({ nombre, url }) => (
-              <li key={nombre}>
-                <Link href={url}>{nombre}</Link>
+              <li key={nombre} className="relative group">
+                <Link
+                  href={url}
+                  className="text-white font-semibold text-lg tracking-wide transition-all duration-300 hover:text-primary relative"
+                >
+                  {nombre}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full rounded-full"></span>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        <div className="hidden md:flex space-x-4">
-          <Link className="group" href="https://www.facebook.com/inproco.cl/">
-            <Facebook className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+        {/* Redes sociales mejoradas */}
+        <div className="hidden md:flex items-center space-x-4">
+          <Link
+            className="group p-3 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-110"
+            href="https://www.facebook.com/inproco.cl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook className="fill-white group-hover:fill-primary transition-all duration-300 size-5" />
           </Link>
           <Link
-            className="group"
+            className="group p-3 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-110"
             href="https://www.linkedin.com/company/inproco-ltda"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <LinkedIn className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+            <LinkedIn className="fill-white group-hover:fill-primary transition-all duration-300 size-5" />
           </Link>
-          <Link className="group" href="https://www.facebook.com/inproco.cl/">
-            <Instagram className="fill-white group-hover:fill-secondary transition rounded-xs size-4.5" />
+          <Link
+            className="group p-3 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-110"
+            href="https://www.instagram.com/inproco.cl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram className="fill-white group-hover:fill-primary transition-all duration-300 size-5" />
           </Link>
         </div>
       </header>
