@@ -8,7 +8,7 @@ type Props = {
 
 export const Input = ({ label, placeholder }: Props) => {
   return (
-<<<<<<< HEAD
+
     <div className="w-full">
       <label className="block mb-2">
         <span className="text-white text-sm font-semibold">{label}</span>
@@ -19,16 +19,7 @@ export const Input = ({ label, placeholder }: Props) => {
         />
       </label>
     </div>
-=======
-    <label className="flex flex-col w-full">
-      <span className="text-neutral-300 text-md font-bold mb-2">{label}:</span>
-      <input
-        type="text"
-        placeholder={placeholder}
-        className="outline-none border-b border-secondary p-1"
-      />
-    </label>
->>>>>>> 163b8d7eee36ff247c4c83e6a3fbab0549307d26
+
   );
 };
 
