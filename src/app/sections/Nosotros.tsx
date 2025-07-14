@@ -1,11 +1,6 @@
 "use client";
-<<<<<<< HEAD
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-=======
-
-import { motion } from "framer-motion";
->>>>>>> 163b8d7eee36ff247c4c83e6a3fbab0549307d26
 import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
 import { useRef, useEffect, useState } from "react";
