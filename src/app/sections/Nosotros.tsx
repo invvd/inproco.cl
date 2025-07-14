@@ -1,9 +1,8 @@
 "use client";
 import { motion, useScroll, useTransform } from "motion/react";
-import { useRef } from "react";
 import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 
 export default function Nosotros() {
   const sectionRef = useRef<HTMLElement>(null);

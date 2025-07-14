@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import FormInput from "../components/FormInput";
 import SubmitButton from "../components/SubmitButton";
 import FormInputTextArea from "../components/FormInputTextArea";
+import Image from "next/image";
 
 const correo = "contacto@inproco.cl";
 const telefono = "+56 9 8765 4321";
@@ -133,7 +134,6 @@ function Contacto() {
             </motion.div>
           </div>
         </div>
-<<<<<<< HEAD
 
         {/* Contact Form */}
         <div className="w-full lg:w-1/2 relative flex items-center justify-center p-8 md:p-10 lg:p-12">
@@ -225,20 +225,6 @@ function Contacto() {
           </motion.div>
         </div>
       </div>
-=======
-      </div>
-      <div className="flex flex-col gap-4 w-full justify-center items-center bg-gradient-to-br from-neutral-950  to-neutral-800 py-20">
-        <form className="flex flex-col gap-8 w-full items-center max-w-md">
-          <FormInput label="Nombre" placeholder="Jorge Sánchez" />
-          <FormInput
-            label="Correo electrónico"
-            placeholder="ejemplo@mail.com"
-          />
-          <FormInputTextArea label="Mensaje" placeholder="Mensaje..." />
-          <SubmitButton label="Enviar" />
-        </form>
-      </div>
->>>>>>> 163b8d7eee36ff247c4c83e6a3fbab0549307d26
     </section>
   );
 }
