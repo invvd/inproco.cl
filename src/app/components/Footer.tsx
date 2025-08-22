@@ -51,7 +51,7 @@ function Footer() {
             >
               <div className="mb-4">
                 <Image
-                  src="/logos/logo-full-white.webp"
+                  src="/logos/logo-fade.webp"
                   alt="Logo Inproco"
                   width={180}
                   height={90}
