@@ -18,7 +18,7 @@ const proyectos = [
     description:
       "Sistema de asistencia para Trolley en botadero Hualtatas, asociado a subestación eléctrica de potencia 6 MVA.",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Sistema de asistencia para Trolley en botadero Hualtatas, asociado a subestación eléctrica de potencia 6 MVA. El proyecto incluye diseño e instalación de infraestructura eléctrica robusta para soportar operaciones de alta demanda energética en ambiente industrial minero.",
     dimensiones: "18x3,6 metros",
@@ -32,7 +32,7 @@ const proyectos = [
     description:
       "Sala eléctrica destinada a la operación y conexión de sistema fotovoltaico, compuesto por paneles solares.",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Sala eléctrica destinada a la operación y conexión de sistema fotovoltaico, compuesto por paneles solares.",
     dimensiones: "33x3,5 metros",
@@ -46,7 +46,7 @@ const proyectos = [
     description:
       "Infraestructura eléctrica destinada al soporte del Proyecto TNT Nueva Centinela.",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica",
     fullDescription:
       "Infraestructura eléctrica destinada al soporte del Proyecto TNT Nueva Centinela.",
     dimensiones: "21x5 metros",
@@ -60,7 +60,7 @@ const proyectos = [
     description:
       "Sala eléctrica destinada a la operación y conexión del sistema fotovoltaico mediante paneles solares.",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Sala eléctrica destinada a la operación y conexión del sistema fotovoltaico mediante paneles solares.",
     dimensiones: "45x3,5 metros",
@@ -74,7 +74,7 @@ const proyectos = [
     description:
       "Desarrollo de la segunda etapa de subestaciones eléctricas STWM.",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Desarrollo de la segunda etapa de subestaciones eléctricas STWM.",
     dimensiones: "",
@@ -85,12 +85,14 @@ const proyectos = [
     year: "2025",
     title: "Envolventes Proyectos Arqueros",
     client: "",
-    description: "Segunda etapa del proyecto.",
+    description:
+      "Envolvente para SWG el cual cuenta con SSAA, HVAC y control de acceso",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
-    fullDescription: "Segunda etapa del proyecto.",
-    dimensiones: "6,1x3 metros",
-    detalles: "5 unidades",
+    alcance: "Metalmecánica y Eléctrica",
+    fullDescription:
+      "Envolvente para SWG el cual cuenta con SSAA, HVAC y control de acceso",
+    dimensiones: "6,1x3,5 metros",
+    detalles: "4 unidades",
   },
   {
     id: 7,
@@ -99,7 +101,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Diseño e implementación de subestaciones eléctricas de 1000 kVA para distribución de energía en media tensión.",
     dimensiones: "6x3,5 metros",
@@ -112,7 +114,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "6x2,7 metros",
     detalles: "2 unidades",
@@ -123,11 +125,16 @@ const proyectos = [
     title: "Celda Eléctrica Clip",
     client: "",
     description:
-      "Instalación de celda de protección en media tensión para el Proyecto Clip.",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+      "Celda de protección para proyecto Clip, Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
+    images: [
+      "/images/projects/9/1.jpeg",
+      "/images/projects/9/2.jpeg",
+      "/images/projects/9/3.jpeg",
+      "/images/projects/9/4.jpeg",
+    ],
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription:
-      "Instalación de celda de protección en media tensión para el Proyecto Clip.",
+      "Celda de protección para proyecto Clip, Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
     dimensiones: "",
     detalles: "Tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
   },
@@ -138,7 +145,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -150,7 +157,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -162,7 +169,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -174,7 +181,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -186,7 +193,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Metalmecánica y Eléctrica",
+    alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -198,7 +205,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Eléctrica",
+    alcance: "Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -210,7 +217,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Eléctrica",
+    alcance: "Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -222,7 +229,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Eléctrica",
+    alcance: "Eléctrica",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -234,7 +241,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -246,7 +253,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -258,7 +265,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -270,7 +277,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -282,7 +289,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -294,7 +301,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -306,7 +313,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Salas Eléctricas",
+    alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -318,7 +325,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Montaje en Terreno",
+    alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -330,7 +337,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Montaje en Terreno",
+    alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -342,7 +349,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Montaje en Terreno",
+    alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -354,7 +361,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Montaje en Terreno",
+    alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -366,7 +373,7 @@ const proyectos = [
     client: "",
     description: "",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    integracion: "Montaje en Terreno",
+    alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
     detalles: "",
@@ -444,14 +451,16 @@ function Proyectos() {
       className="min-h-screen bg-white text-gray-900 py-20"
     >
       <div className="container mx-auto px-4">
-        <SectionTitle>
-          <div className="text-center">
-            <div className="text-4xl md:text-6xl font-bold mb-4">Proyectos</div>
-            <div className="text-lg text-gray-400 mb-12">
-              Experiencia en acción
-            </div>
+        <div className="flex flex-col items-center">
+          <SectionTitle invertBadgeColor className="flex items-center mb-4">
+            Proyectos
+          </SectionTitle>
+          <div
+            className={`text-lg text-gray-400 mb-12 ${monument.className} uppercase`}
+          >
+            Experiencia en acción
           </div>
-        </SectionTitle>
+        </div>
 
         {/* Filtros por año */}
         <div className="flex justify-center mb-12">
@@ -522,7 +531,7 @@ function Proyectos() {
                     {proyecto.description}
                   </p>
                   <div className="text-xs text-gray-500 mb-3">
-                    {proyecto.integracion}
+                    {proyecto.alcance}
                   </div>
                 </div>
               </motion.div>
@@ -698,14 +707,12 @@ function Proyectos() {
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="text-primary font-semibold mb-3">
-                    Integración
-                  </h4>
+                  <h4 className="text-primary font-semibold mb-3">Alcance</h4>
                 </div>
 
                 <div className="mb-6">
                   <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm border border-primary/20">
-                    {selectedProject.integracion}
+                    {selectedProject.alcance}
                   </span>
                 </div>
 

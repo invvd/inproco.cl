@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 type HeroProps = {
   videoSrc: string;
@@ -56,15 +55,6 @@ export default function Hero({ videoSrc }: HeroProps) {
           transition={{ duration: 1, delay: 0.5 }}
           className="max-w-4xl mx-auto space-y-8"
         >
-          <Image
-            src="/logos/logo-full-white.webp"
-            alt="Logo de Inproco"
-            width={400}
-            height={200}
-            className="mx-auto mb-8 w-72 md:w-96 drop-shadow-2xl"
-            priority
-          />
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
