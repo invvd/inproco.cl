@@ -125,7 +125,7 @@ const proyectos = [
     title: "Celda Eléctrica Clip",
     client: "",
     description:
-      "Celda de protección para proyecto Clip, Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
+      "Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
     images: [
       "/images/projects/9/1.jpeg",
       "/images/projects/9/2.jpeg",
@@ -134,7 +134,7 @@ const proyectos = [
     ],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
-      "Celda de protección para proyecto Clip, Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
+      "Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
     dimensiones: "",
     detalles: "Tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
   },
