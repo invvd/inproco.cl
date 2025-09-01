@@ -12,30 +12,38 @@ const monument = localFont({
 const servicios = [
   {
     id: 1,
-    title: "Integración",
+    title: "Diseño y Cálculo",
     image: "/images/integracion.jpg",
     description:
-      "Soluciones integrales de sistemas industriales con tecnología de vanguardia",
+      "Diseño de salas, sub estaciones, celdas equipos y tableros. Memorias de iluminación, cálculo de consumo y cargas, levantamientos, regularizaciones y más.",
   },
   {
     id: 2,
-    title: "Ingeniería",
+    title: "Fabricación y Construcción",
     image: "/images/ingenieria.jpg",
     description:
-      "Desarrollo y diseño de proyectos personalizados para cada cliente",
+      "Fabricación de salas eléctricas, sub estaciones, celdas y equipamiento eléctrico. Construcción de equipamiento mecánico, plataformas, marcos y yugos de izaje.",
   },
   {
     id: 3,
-    title: "Mecánica",
+    title: "Montaje e Integración",
     image: "/images/mecanica.jpg",
     description:
-      "Fabricación, mantenimiento y reparación de equipos especializados",
+      "Montaje de salas e instalaciones eléctricas. Integración de equipos eléctricos; VDF, PLC, CCM, SW de media y baja tensión. Integración de todo tipo de tableros eléctricos",
   },
   {
     id: 4,
-    title: "Servicios en terreno",
+    title: "Pruebas y Controles",
     image: "/images/terreno.jpg",
-    description: "Soporte técnico especializado y mantenimiento in-situ",
+    description:
+      "Pruebas de aislación en baja y media tensión, resistencia de contacto, mediciones de energía bajo condiciones de prueba estrictamente controladas. Tenemos todo lo que necesitas.",
+  },
+  {
+    id: 5,
+    title: "Servicios en Terreno",
+    image: "/images/terreno.jpg",
+    description:
+      "Levantamiento e ingresos sec, montaje, Interconexión, puesta en marcha, asesoría y supervisión, pruebas eléctricas, fabricación de mufas, mallas a tierra, termofusiones.",
   },
 ];
 
@@ -74,7 +82,7 @@ function Servicios() {
         </p>
       </motion.div>
 
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="w-full max-w-8xl flex-wrap justify-center flex gap-8 mb-12">
         {servicios.map((servicio, index) => (
           <motion.div
             key={servicio.id}
@@ -82,7 +90,7 @@ function Servicios() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className={index === 1 ? "md:col-span-2" : ""}
+            className="max-w-xs grow shrink-0"
           >
             <Link
               target="_blank"
@@ -114,27 +122,9 @@ function Servicios() {
 
               {/* Content area */}
               <div className="flex-1 p-6 flex flex-col justify-between">
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                <p className="text-gray-700 text-sm mb-4">
                   {servicio.description}
                 </p>
-
-                {/* Action button */}
-                <div className="flex items-center text-primary font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                  Conoce más
-                  <svg
-                    className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </div>
               </div>
             </Link>
           </motion.div>
