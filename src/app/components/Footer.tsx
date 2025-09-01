@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import {
   IconMail,
-  IconPhone,
   IconMapPin,
   IconBrandLinkedin,
   IconBrandInstagram,
@@ -13,7 +12,6 @@ import {
 } from "@tabler/icons-react";
 
 const correo = "contacto@inproco.cl";
-const telefono = "+56 9 8765 4321";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -71,14 +69,6 @@ function Footer() {
                 >
                   <IconMail className="w-4 h-4 text-primary flex-shrink-0" />
                   {correo}
-                </Link>
-
-                <Link
-                  href={`tel:${telefono}`}
-                  className="flex items-center gap-2 text-sm text-gray-400 hover:text-primary transition-colors duration-300"
-                >
-                  <IconPhone className="w-4 h-4 text-primary flex-shrink-0" />
-                  {telefono}
                 </Link>
               </div>
             </motion.div>

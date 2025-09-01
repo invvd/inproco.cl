@@ -1,5 +1,5 @@
 "use client";
-import { IconBuilding, IconMail, IconPhone } from "@tabler/icons-react";
+import { IconBuilding, IconMail } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import FormInput from "../components/FormInput";
@@ -8,7 +8,6 @@ import FormInputTextArea from "../components/FormInputTextArea";
 import Image from "next/image";
 
 const correo = "contacto@inproco.cl";
-const telefono = "+56 9 8765 4321";
 
 function Contacto() {
   return (
@@ -85,31 +84,6 @@ function Contacto() {
                     </span>
                     <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                       {correo}
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <Link
-                  href={`tel:${telefono}`}
-                  className="flex items-start gap-4 group hover:bg-white/5 p-4 rounded-lg transition-all duration-300"
-                  target="_blank"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primary/80 transition-colors duration-300">
-                    <IconPhone stroke={1.5} className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-white group-hover:text-primary transition-colors duration-300">
-                      Teléfono
-                    </span>
-                    <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {telefono}
                     </span>
                   </div>
                 </Link>
