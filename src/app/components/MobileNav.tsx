@@ -19,7 +19,7 @@ export function MobileNav({
   setShowMenu,
 }: MobileNavProps) {
   return (
-    <div className="md:hidden flex items-center">
+    <div className="lg:hidden flex items-center">
       {/* Menu móvil mejorado */}
       <nav
         className={`fixed glass-effect backdrop-blur-lg flex justify-center items-center text-center top-0 z-50 right-0 w-screen h-full ${
