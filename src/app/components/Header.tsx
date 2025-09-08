@@ -18,12 +18,12 @@ const secciones = [
     url: "#nosotros",
   },
   {
-    nombre: "Proyectos",
-    url: "#proyectos",
+    nombre: "Servicios",
+    url: "#servicios",
   },
   {
-    nombre: "Servicios",
-    url: "/servicios",
+    nombre: "Proyectos",
+    url: "#proyectos",
   },
   {
     nombre: "Contacto",
@@ -36,14 +36,12 @@ export function Header() {
 
   return (
     <>
-
       <header className="z-20 fixed w-auto h-20 flex justify-between items-center px-6 py-3 rounded-2xl top-4 left-4 right-4 max-w-[calc(100%-2rem)] border border-white/20 shadow-2xl backdrop-blur-md bg-white/10">
         {/* Logo con efecto mejorado */}
         <Link
-          className="hover:scale-110 transition-all duration-300 hover:drop-shadow-lg"
+          className="hover:scale-110 transition-all duration-300 max-h-full flex shrink w-fit items-center hover:drop-shadow-lg"
           href="/"
         >
-
           <Image
             draggable={false}
             width={120}
@@ -51,14 +49,23 @@ export function Header() {
             src={"/logos/logo-fade.webp"}
             alt="Logo de Inproco"
             loading="eager"
-            className="filter drop-shadow-md"
+            className="filter drop-shadow-md flex-1"
+          />
+          <Image
+            draggable={false}
+            src={"/logos/iso.png"}
+            width={5000}
+            height={8738}
+            alt="Logo de Inproco"
+            loading="eager"
+            className="filter drop-shadow-md h-full max-h-12 w-fit ml-2 object-contain"
           />
         </Link>
 
         {/* Botón móvil mejorado */}
         <button
           title="Menu"
-          className="md:hidden cursor-pointer text-white hover:text-primary transition-all duration-300 hover:scale-110 p-2 rounded-xl hover:bg-white/10"
+          className="lg:hidden cursor-pointer text-white hover:text-primary transition-all duration-300 hover:scale-110 p-2 rounded-xl hover:bg-white/10"
           onClick={() => {
             setShowMenu(!showMenu);
           }}
@@ -67,7 +74,7 @@ export function Header() {
         </button>
 
         {/* Navegación desktop mejorada */}
-        <nav className="hidden md:block">
+        <nav className="hidden lg:block">
           <ul className="flex items-center space-x-8">
             {secciones.map(({ nombre, url }) => (
               <li key={nombre} className="relative group">
@@ -84,7 +91,7 @@ export function Header() {
         </nav>
 
         {/* Redes sociales mejoradas */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <Link
             className="group p-3 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-110"
             href="https://www.facebook.com/inproco.cl/"
