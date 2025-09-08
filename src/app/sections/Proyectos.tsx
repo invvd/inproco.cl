@@ -14,7 +14,6 @@ const proyectos = [
     id: 1,
     year: "2025",
     title: "Subestación Trolley Hualtatas",
-    client: "Trolley",
     description:
       "Sistema de asistencia para Trolley en botadero Hualtatas, asociado a subestación eléctrica de potencia 6 MVA.",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
@@ -135,8 +134,8 @@ const proyectos = [
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
-    dimensiones: "",
-    detalles: "Tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
+    dimensiones: "3,15x1,84 metros",
+    detalles: "Tensiones 15.5KV, 4000A, 110KV BIL, 80KA, 2 Módulos",
   },
   {
     id: 10,
@@ -519,9 +518,6 @@ function Proyectos() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="text-primary text-sm mb-2">
-                    {proyecto.client}
-                  </div>
                   <h3
                     className={`text-xl font-bold mb-3 text-gray-900 ${monument.className}`}
                   >
