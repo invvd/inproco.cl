@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
 import { useRef } from "react";
+import Link from "next/link";
+import { IconExternalLink } from "@tabler/icons-react";
 
 export default function Nosotros() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -123,6 +125,13 @@ export default function Nosotros() {
               mundo.
             </motion.p>
           </div>
+
+          <Link
+            href="#"
+            className="px-8 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8 text-xl"
+          >
+            Ver políticas de la empresa <IconExternalLink size={28} />
+          </Link>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
