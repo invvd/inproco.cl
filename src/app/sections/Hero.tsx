@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 type HeroProps = {
   videoSrc: string;
@@ -80,18 +81,18 @@ export default function Hero({ videoSrc }: HeroProps) {
             transition={{ duration: 0.8, delay: 1.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
           >
-            <a
+            <Link
               href="#nosotros"
               className="px-8 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Conoce más
-            </a>
-            <a
+            </Link>
+            <Link
               href="#contacto"
               className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
             >
               Contáctanos
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
