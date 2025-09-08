@@ -36,7 +36,7 @@ const servicios = [
     title: "Pruebas y Controles",
     image: "/images/terreno.jpg",
     description:
-      "Pruebas de aislación en baja y media tensión, resistencia de contacto, mediciones de energía bajo condiciones de prueba estrictamente controladas. Tenemos todo lo que necesitas.",
+      "Pruebas de aislación en baja y media tensión, resistencia de contacto, mediciones de energía bajo condiciones de prueba estrictamente controladas.",
   },
   {
     id: 5,
@@ -104,7 +104,6 @@ function Servicios() {
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                   src={servicio.image}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
 
                 {/* Gradient overlay */}
