@@ -1,7 +1,6 @@
 "use client";
 import localFont from "next/font/local";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "motion/react";
 import { IconHeartHandshake } from "@tabler/icons-react";
 
@@ -92,11 +91,7 @@ function Servicios() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="max-w-xs grow shrink-0"
           >
-            <Link
-              target="_blank"
-              href="/"
-              className="group flex flex-col h-80 relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] border border-gray-200"
-            >
+            <div className="group flex flex-col h-80 relative bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-500 transform border border-gray-200">
               <div className="relative h-48 overflow-hidden">
                 <Image
                   loading="lazy"
@@ -112,7 +107,7 @@ function Servicios() {
                 {/* Service title overlay */}
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3
-                    className={`${monument.className} text-xl md:text-2xl uppercase font-bold text-white text-shadow-lg group-hover:text-primary transition-colors duration-300`}
+                    className={`${monument.className} text-xl md:text-2xl uppercase font-bold text-white text-shadow-lg transition-colors duration-300`}
                   >
                     {servicio.title}
                   </h3>
@@ -125,7 +120,7 @@ function Servicios() {
                   {servicio.description}
                 </p>
               </div>
-            </Link>
+            </div>
           </motion.div>
         ))}
       </div>
