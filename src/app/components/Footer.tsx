@@ -108,10 +108,15 @@ function Footer() {
               </h3>
               <div className="flex items-start gap-2 mb-4">
                 <IconMapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <div className="text-sm text-gray-400">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={"https://maps.app.goo.gl/xhscd1JgvEFeeArBA"}
+                  className="text-sm text-gray-400 hover:text-primary transition-colors duration-300"
+                >
                   <p>Cam. La Vara 03395</p>
                   <p>San Bernardo, RM</p>
-                </div>
+                </Link>
               </div>
 
               {/* Social Media */}
@@ -150,15 +155,20 @@ function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col md:flex-row justify-between items-center gap-2"
             >
-              <div className="text-xs text-gray-500 text-center md:text-left">
+              <div className="text-sm text-white/50 text-center md:text-left">
                 <p>
                   &copy; {currentYear} INPROCO. Todos los derechos reservados.
                 </p>
               </div>
 
-              <div className="text-xs text-gray-500 text-center md:text-right">
-                <p>Desarrollado para la industria chilena</p>
-              </div>
+              <Link
+                href={"https://danielmass.vercel.app"}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-sm text-center text-white/50 hover:text-white hover:scale-105 transition md:text-right"
+              >
+                <p>Desarrollado por Daniel Mass</p>
+              </Link>
             </motion.div>
           </div>
         </div>
