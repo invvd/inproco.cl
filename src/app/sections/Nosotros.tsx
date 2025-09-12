@@ -138,8 +138,17 @@ export default function Nosotros() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="mt-10"
+            className="mt-10 flex justify-center items-center"
           >
+            <Image
+              draggable={false}
+              src={"/logos/iso.png"}
+              width={5000}
+              height={8738}
+              alt="Certificación ISO de Inproco"
+              loading="eager"
+              className="filter drop-shadow-md max-h-28 w-fit ml-2 object-contain"
+            />
             <Image
               loading="eager"
               draggable={false}

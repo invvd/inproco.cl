@@ -367,7 +367,6 @@ const proyectos = [
   },
   {
     id: 29,
-    year: "",
     title: "Interconexión comunicación, Metro L3",
     client: "",
     description: "",
@@ -391,6 +390,13 @@ function Proyectos() {
 
   // Obtener años únicos y ordenarlos
   const availableYears = Array.from(new Set(proyectos.map((p) => p.year)))
+    .filter(
+      (year): year is string =>
+        typeof year === "string" &&
+        year !== undefined &&
+        year !== "" &&
+        year.trim() !== ""
+    )
     .sort()
     .reverse();
 
@@ -454,11 +460,7 @@ function Proyectos() {
           <SectionTitle invertBadgeColor className="flex items-center mb-4">
             Proyectos
           </SectionTitle>
-          <div
-            className={`text-lg text-gray-400 mb-12 ${monument.className} uppercase`}
-          >
-            Experiencia en acción
-          </div>
+          <div className={`text-lg mb-12`}>Experiencia en acción</div>
         </div>
 
         {/* Filtros por año */}
@@ -472,7 +474,7 @@ function Proyectos() {
                   : "bg-transparent text-gray-700 border-gray-300 hover:border-primary hover:text-primary"
               }`}
             >
-              Todos
+              Todos los años
             </button>
             {availableYears.map((year) => (
               <button
