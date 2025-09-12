@@ -44,21 +44,21 @@ export function Header() {
         >
           <Image
             draggable={false}
+            src={"/logos/iso.png"}
+            width={5000}
+            height={8738}
+            alt="Certificación ISO de Inproco"
+            loading="eager"
+            className="filter drop-shadow-md h-full max-h-12 w-fit ml-2 object-contain"
+          />
+          <Image
+            draggable={false}
             width={120}
             height={120}
             src={"/logos/logo-fade.webp"}
             alt="Logo de Inproco"
             loading="eager"
             className="filter drop-shadow-md flex-1"
-          />
-          <Image
-            draggable={false}
-            src={"/logos/iso.png"}
-            width={5000}
-            height={8738}
-            alt="Logo de Inproco"
-            loading="eager"
-            className="filter drop-shadow-md h-full max-h-12 w-fit ml-2 object-contain"
           />
         </Link>
 
