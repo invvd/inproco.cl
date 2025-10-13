@@ -495,7 +495,7 @@ function Proyectos() {
         {/* Proyectos */}
         <div className="relative">
           <div
-            className="flex overflow-x-auto scrollbar-hide gap-6"
+            className="flex overflow-x-auto scrollbar-hide overflow-y-hidden gap-6"
             ref={scrollContainerRef}
           >
             {filteredProjects.map((proyecto) => (
