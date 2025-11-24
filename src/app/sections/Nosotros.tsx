@@ -44,10 +44,11 @@ export default function Nosotros() {
           transition={{ duration: 0.8 }}
           className="text-center flex w-full flex-col items-center justify-center"
         >
-          <SectionTitle className="mb-6">Nosotros</SectionTitle>
+          <SectionTitle className="mb-6 text-3xl">Nosotros</SectionTitle>
 
-          <div className="space-y-8 text-gray-200 text-left text-pretty text-base md:text-lg leading-relaxed">
+          <div className="space-y-8 text-gray-200 text-left text-pretty text-base leading-relaxed">
             <motion.p
+              className="text-sm"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -119,7 +120,7 @@ export default function Nosotros() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-center text-xl md:text-2xl font-bold text-white pt-4"
+              className="text-center text-lg font-bold text-white pt-4"
             >
               Somos Inproco y, juntos, damos forma a la energía que mueve al
               mundo.
@@ -128,7 +129,7 @@ export default function Nosotros() {
 
           <Link
             href="#"
-            className="px-8 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8 text-xl"
+            className="px-6 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
           >
             Ver políticas de la empresa <IconExternalLink size={28} />
           </Link>
@@ -138,7 +139,7 @@ export default function Nosotros() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="mt-10 flex justify-center items-center"
+            className="mt-10 flex w-60 justify-center items-center max-h-28"
           >
             <Image
               draggable={false}
@@ -147,12 +148,12 @@ export default function Nosotros() {
               height={8738}
               alt="Certificación ISO de Inproco"
               loading="eager"
-              className="filter drop-shadow-md max-h-28 w-fit ml-2 object-contain"
+              className="filter drop-shadow-md w-fit max-h-20 ml-2 object-contain"
             />
             <Image
               loading="eager"
               draggable={false}
-              className="w-80 md:w-96 drop-shadow-2xl"
+              className="drop-shadow-2xl max-h-20 object-contain"
               src="/logos/logo-full-white.webp"
               alt="Logo de Inproco en blanco"
               width={400}

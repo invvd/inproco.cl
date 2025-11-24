@@ -90,7 +90,7 @@ const proyectos = [
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Envolvente para SWG el cual cuenta con SSAA, HVAC y control de acceso",
-    dimensiones: "6,1x3,5 metros",
+    dimensiones: "6x3,5 metros",
     detalles: "4 unidades",
   },
   {
@@ -103,8 +103,8 @@ const proyectos = [
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Diseño e implementación de subestaciones eléctricas de 1000 kVA para distribución de energía en media tensión.",
-    dimensiones: "6x3,5 metros",
-    detalles: "4 unidades",
+    dimensiones: "6,1x3 metros",
+    detalles: "5 unidades",
   },
   {
     id: 8,
@@ -123,8 +123,7 @@ const proyectos = [
     year: "2024",
     title: "Celda Eléctrica Clip",
     client: "",
-    description:
-      "Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
+    description: "Celda de protección para proyecto Clip.",
     images: [
       "/images/projects/9/1.jpeg",
       "/images/projects/9/2.jpeg",
@@ -134,7 +133,7 @@ const proyectos = [
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Celda de protección para proyecto Clip, tensiones 15.5KV, 4000A, 110KV BIL, 80KA",
-    dimensiones: "3,15x1,84 metros",
+    dimensiones: "3,27x1,84 metros",
     detalles: "Tensiones 15.5KV, 4000A, 110KV BIL, 80KA, 2 Módulos",
   },
   {
@@ -142,12 +141,12 @@ const proyectos = [
     year: "2024",
     title: "Celda Eléctrica, Arqueros",
     client: "",
-    description: "",
+    description: "Envolvente SWITCHGEAR",
     images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    alcance: "Metalmecánica y Eléctrica",
-    fullDescription: "",
-    dimensiones: "",
-    detalles: "",
+    alcance: "Mecánico y Eléctrico",
+    fullDescription: "Envolvente SWITCHGEAR",
+    dimensiones: "6x2,7m",
+    detalles: "1 unidad",
   },
   {
     id: 11,
@@ -504,7 +503,7 @@ function Proyectos() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="min-w-[350px] max-w-[350px] bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 hover:border-primary/50 transition-all duration-300 cursor-pointer group shadow-lg hover:shadow-xl"
+                className="min-w-[300px] max-w-[350px] bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 hover:border-primary/50 transition-all duration-300 cursor-pointer group shadow-lg hover:shadow-xl"
                 onClick={() => openModal(proyecto)}
               >
                 <div className="relative h-56 overflow-hidden">

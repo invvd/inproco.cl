@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { IconHeartHandshake } from "@tabler/icons-react";
+import SectionTitle from "../components/SectionTitle";
 
 const monument = localFont({
   src: "../fonts/Monument.woff2",
@@ -59,23 +60,10 @@ function Servicios() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <div className="flex justify-center items-center gap-3 mb-4">
-          <Image
-            draggable={false}
-            loading="lazy"
-            alt="Insignia de Inproco"
-            className="drop-shadow-md w-12 sm:w-14 invert"
-            src={"/logos/badge-white.webp"}
-            width={60}
-            height={60}
-          />
-          <h2
-            className={`${monument.className} font-bold uppercase text-center text-4xl md:text-5xl lg:text-6xl text-gray-900`}
-          >
-            Servicios
-          </h2>
-        </div>
-        <p className="text-center text-lg md:text-xl max-w-2xl mx-auto text-gray-700">
+        <SectionTitle invertBadgeColor className="mb-6">
+          Servicios
+        </SectionTitle>
+        <p className="text-center max-w-2xl mx-auto text-gray-700">
           Ofrecemos soluciones integrales de ingeniería con la más alta calidad
           y compromiso
         </p>

@@ -36,10 +36,10 @@ export function Header() {
 
   return (
     <>
-      <header className="z-20 fixed w-auto h-20 flex justify-between items-center px-6 py-3 rounded-2xl top-4 left-4 right-4 max-w-[calc(100%-2rem)] border border-white/20 shadow-2xl backdrop-blur-md bg-white/10">
+      <header className="z-20 fixed w-auto h-16 flex justify-between items-center px-4 py-2 rounded-2xl top-2 left-2 right-2 max-w-[calc(100%-2rem)] border border-white/5 shadow-2xl backdrop-blur-md bg-black/30">
         {/* Logo con efecto mejorado */}
         <Link
-          className="hover:scale-110 transition-all duration-300 max-h-full flex shrink w-fit items-center hover:drop-shadow-lg"
+          className="hover:scale-105 transition-all duration-300 max-h-full flex shrink w-fit items-center hover:drop-shadow-lg"
           href="/"
         >
           <Image
@@ -80,7 +80,7 @@ export function Header() {
               <li key={nombre} className="relative group">
                 <Link
                   href={url}
-                  className="text-white font-semibold text-lg tracking-wide transition-all duration-300 hover:text-primary relative"
+                  className="text-white font-semibold tracking-wide transition-all duration-300 hover:text-primary relative"
                 >
                   {nombre}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full rounded-full"></span>

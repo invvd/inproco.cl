@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 import FormInput from "../components/FormInput";
 import SubmitButton from "../components/SubmitButton";
 import FormInputTextArea from "../components/FormInputTextArea";
-import Image from "next/image";
 
 const correo = "contacto@inproco.cl";
 
@@ -89,23 +88,6 @@ function Contacto() {
                 </Link>
               </motion.div>
             </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex justify-center lg:justify-start"
-            >
-              <Image
-                alt="Logo Inproco"
-                draggable={false}
-                src={"/logos/logo-full-white.webp"}
-                width={300}
-                height={150}
-                className="opacity-80"
-              />
-            </motion.div>
           </div>
         </div>
 
@@ -119,10 +101,10 @@ function Contacto() {
             className="w-full max-w-lg"
           >
             <div className="mb-6 text-center lg:text-left">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+              <h3 className="text-2xl font-bold text-white mb-2">
                 Envíanos un mensaje
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm">
                 Cuéntanos sobre tu proyecto y te contactaremos a la brevedad
               </p>
             </div>
