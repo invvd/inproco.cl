@@ -4,7 +4,7 @@ import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
 import { useRef } from "react";
 import Link from "next/link";
-import { IconExternalLink } from "@tabler/icons-react";
+import { IconExternalLink, IconHeartHandshake } from "@tabler/icons-react";
 
 export default function Nosotros() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -160,6 +160,75 @@ export default function Nosotros() {
               height={200}
             />
           </motion.div>
+
+          <h3 className="text-4xl font-bold mt-10">Valores</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold mb-2">
+                EXCELENCIA Y MEJORA CONTINUA
+              </h4>
+              <p className="text-white/60">
+                Refleja el compromiso de INPROCO con la calidad, la innovación,
+                la eficiencia y la satisfacción del cliente. Promueve el trabajo
+                en equipo, la orientación al cliente, la responsabilidad social
+                interna y la búsqueda constante de la mejora en cada proceso.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold mb-2">
+                SEGURIDAD Y BIENESTAR INTEGRAL
+              </h4>
+              <p className="text-white/60">
+                Representa la prioridad de proteger la vida, la salud y el
+                bienestar de todos los colaboradores, clientes y comunidades,
+                manteniendo entornos de trabajo seguros, saludables y
+                equitativos.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <IconHeartHandshake color="white" className="size-8" />
+              </div>
+              <h4 className="text-lg font-semibold mb-2">
+                RESPONSABILIDAD Y SOSTENIBILIDAD
+              </h4>
+              <p className="text-white/60">
+                Refleja el compromiso con el entorno, la sociedad y las futuras
+                generaciones, fomentando prácticas responsables, éticas y
+                sostenibles en todas las operaciones y relaciones.
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
