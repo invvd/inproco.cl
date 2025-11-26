@@ -4,7 +4,11 @@ import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
 import { useRef } from "react";
 import Link from "next/link";
-import { IconExternalLink, IconHeartHandshake } from "@tabler/icons-react";
+import {
+  IconExternalLink,
+  IconHeartHandshake,
+  IconShield,
+} from "@tabler/icons-react";
 
 export default function Nosotros() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -191,19 +195,7 @@ export default function Nosotros() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
+                <IconShield />
               </div>
               <h4 className="text-lg font-semibold mb-2">
                 SEGURIDAD Y BIENESTAR INTEGRAL
