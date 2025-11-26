@@ -59,7 +59,7 @@ export default function Hero({ videoSrc }: HeroProps) {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider text-shadow-lg leading-tight"
           >
             INGENIERÍA & DESARROLLO
@@ -68,7 +68,7 @@ export default function Hero({ videoSrc }: HeroProps) {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.3 }}
+            transition={{ duration: 0.8, delay: 2.3 }}
             className="text-lgtext-gray-200 max-w-3xl mx-auto leading-relaxed text-shadow"
           >
             Expertos en diseño, fabricación y desarrollo de productos y
