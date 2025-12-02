@@ -36,7 +36,7 @@ export default function Hero({ videoSrc }: HeroProps) {
         ref={sectionRef}
         controlsList="nodownload"
         loop
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full aspect-[4/3] h-full object-cover opacity-80"
         autoPlay
         muted
         playsInline
@@ -54,13 +54,13 @@ export default function Hero({ videoSrc }: HeroProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="max-w-4xl mx-auto space-y-8"
+          className="mx-auto space-y-8 translate-y-8"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider text-shadow-lg leading-tight"
+            className="text-4xl md:text-6xl m-0 font-bold text-shadow-lg leading-tight"
           >
             INGENIERÍA & DESARROLLO
           </motion.h1>
@@ -69,7 +69,7 @@ export default function Hero({ videoSrc }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2.3 }}
-            className="text-lgtext-gray-200 max-w-3xl mx-auto leading-relaxed text-shadow"
+            className="text-lg text-gray-200 mx-auto leading-relaxed text-shadow m-0"
           >
             Expertos en diseño, fabricación y desarrollo de productos y
             servicios para la minería, industria y obras civiles
@@ -79,7 +79,7 @@ export default function Hero({ videoSrc }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
           >
             <Link
               href="#nosotros"

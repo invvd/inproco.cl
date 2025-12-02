@@ -131,41 +131,24 @@ export default function Nosotros() {
             </motion.p>
           </div>
 
-          <Link
-            href="#"
-            className="px-6 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
-          >
-            Ver políticas de la empresa <IconExternalLink size={28} />
-          </Link>
+          <div className="flex gap-8 my-4">
+            <Link
+              href="/files/politicas-inproco.pdf"
+              target="_blank"
+              className="px-6 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
+            >
+              Ver políticas de la empresa <IconExternalLink size={28} />
+            </Link>
+            <Link
+              href="/files/iso-inproco.pdf"
+              target="_blank"
+              className="px-6 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
+            >
+              Empresa certificada ISO <IconExternalLink size={28} />
+            </Link>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="mt-10 flex w-60 justify-center items-center max-h-28"
-          >
-            <Image
-              draggable={false}
-              src={"/logos/iso.png"}
-              width={5000}
-              height={8738}
-              alt="Certificación ISO de Inproco"
-              loading="eager"
-              className="filter drop-shadow-md w-fit max-h-20 ml-2 object-contain"
-            />
-            <Image
-              loading="eager"
-              draggable={false}
-              className="drop-shadow-2xl max-h-20 object-contain"
-              src="/logos/logo-full-white.webp"
-              alt="Logo de Inproco en blanco"
-              width={400}
-              height={200}
-            />
-          </motion.div>
-
-          <h3 className="text-4xl font-bold mt-10">Valores</h3>
+          <h3 className="text-4xl font-bold mt-16">Valores</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">

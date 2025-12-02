@@ -24,9 +24,21 @@ function Footer() {
   ];
 
   const redesSociales = [
-    { name: "LinkedIn", icon: IconBrandLinkedin, href: "#" },
-    { name: "Instagram", icon: IconBrandInstagram, href: "#" },
-    { name: "Facebook", icon: IconBrandFacebook, href: "#" },
+    {
+      name: "Facebook",
+      icon: IconBrandFacebook,
+      href: "https://www.facebook.com/inproco.cl/",
+    },
+    {
+      name: "LinkedIn",
+      icon: IconBrandLinkedin,
+      href: "https://www.linkedin.com/company/inproco-ltda",
+    },
+    {
+      name: "Instagram",
+      icon: IconBrandInstagram,
+      href: "https://www.instagram.com/inproco.cl/",
+    },
   ];
 
   return (

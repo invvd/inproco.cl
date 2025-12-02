@@ -13,35 +13,35 @@ const servicios = [
   {
     id: 1,
     title: "Diseño y Cálculo",
-    image: "/images/integracion.jpg",
+    image: "/images/diseno.webp",
     description:
       "Diseño de salas, sub estaciones, celdas equipos y tableros. Memorias de iluminación, cálculo de consumo y cargas, levantamientos, regularizaciones y más.",
   },
   {
     id: 2,
     title: "Fabricación y Construcción",
-    image: "/images/ingenieria.jpg",
+    image: "/images/fabricacion.webp",
     description:
       "Fabricación de salas eléctricas, sub estaciones, celdas y equipamiento eléctrico. Construcción de equipamiento mecánico, plataformas, marcos y yugos de izaje.",
   },
   {
     id: 3,
     title: "Montaje e Integración",
-    image: "/images/mecanica.jpg",
+    image: "/images/montaje.webp",
     description:
       "Montaje de salas e instalaciones eléctricas. Integración de equipos eléctricos; VDF, PLC, CCM, SW de media y baja tensión. Integración de todo tipo de tableros eléctricos",
   },
   {
     id: 4,
     title: "Pruebas y Controles",
-    image: "/images/terreno.jpg",
+    image: "/images/pruebas.webp",
     description:
       "Pruebas de aislación en baja y media tensión, resistencia de contacto, mediciones de energía bajo condiciones de prueba estrictamente controladas.",
   },
   {
     id: 5,
     title: "Servicios en Terreno",
-    image: "/images/terreno.jpg",
+    image: "/images/terreno.webp",
     description:
       "Levantamiento e ingresos sec, montaje, Interconexión, puesta en marcha, asesoría y supervisión, pruebas eléctricas, fabricación de mufas, mallas a tierra, termofusiones.",
   },
@@ -81,13 +81,15 @@ function Servicios() {
           >
             <div className="group flex flex-col h-80 relative bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-500 transform border border-gray-200">
               <div className="relative h-48 overflow-hidden">
-                <Image
-                  loading="lazy"
-                  alt={servicio.description}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-                  src={servicio.image}
-                  fill
-                />
+                <div className="size-full bg-black">
+                  <Image
+                    loading="lazy"
+                    alt={servicio.description}
+                    className="w-full h-full object-cover opacity-70 transition-all duration-700 group-hover:scale-110"
+                    src={servicio.image}
+                    fill
+                  />
+                </div>
 
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />

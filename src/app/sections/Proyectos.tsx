@@ -16,7 +16,7 @@ const proyectos = [
     title: "Subestación Trolley Hualtatas",
     description:
       "Sistema de asistencia para Trolley en botadero Hualtatas, asociado a subestación eléctrica de potencia 6 MVA.",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/1/1.webp", "/images/projects/1/2.webp"],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Sistema de asistencia para Trolley en botadero Hualtatas, asociado a subestación eléctrica de potencia 6 MVA. El proyecto incluye diseño e instalación de infraestructura eléctrica robusta para soportar operaciones de alta demanda energética en ambiente industrial minero.",
@@ -30,7 +30,7 @@ const proyectos = [
     client: "",
     description:
       "Sala eléctrica destinada a la operación y conexión de sistema fotovoltaico, compuesto por paneles solares.",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/2/1.webp", "/images/projects/2/2.webp"],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Sala eléctrica destinada a la operación y conexión de sistema fotovoltaico, compuesto por paneles solares.",
@@ -44,7 +44,7 @@ const proyectos = [
     client: "",
     description:
       "Infraestructura eléctrica destinada al soporte del Proyecto TNT Nueva Centinela.",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/3/1.webp", "/images/projects/3/2.webp"],
     alcance: "Metalmecánica",
     fullDescription:
       "Infraestructura eléctrica destinada al soporte del Proyecto TNT Nueva Centinela.",
@@ -58,7 +58,7 @@ const proyectos = [
     client: "",
     description:
       "Sala eléctrica destinada a la operación y conexión del sistema fotovoltaico mediante paneles solares.",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/4/1.webp", "/images/projects/4/2.webp"],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Sala eléctrica destinada a la operación y conexión del sistema fotovoltaico mediante paneles solares.",
@@ -112,7 +112,7 @@ const proyectos = [
     title: "Sala Eléctrica, Codelco RT",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/8/1.webp", "/images/projects/8/2.webp"],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "6x2,7 metros",
@@ -190,7 +190,7 @@ const proyectos = [
     title: "Subestación 123D, 1000 KVA, Chuquicamata",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/14/1.webp", "/images/projects/14/2.webp"],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -452,11 +452,11 @@ function Proyectos() {
   return (
     <section
       id="proyectos"
-      className="min-h-screen bg-white text-gray-900 py-20"
+      className="min-h-screen bg-white text-neutral-900 py-20"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <SectionTitle invertBadgeColor className="flex items-center mb-4">
+          <SectionTitle invertBadgeColor className="mb-6">
             Proyectos
           </SectionTitle>
           <div className={`text-lg mb-12`}>Experiencia en acción</div>
@@ -598,7 +598,7 @@ function Proyectos() {
                   src={selectedProject.images[currentImageIndex]}
                   alt={selectedProject.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
 
                 {/* Navegación de imágenes */}
