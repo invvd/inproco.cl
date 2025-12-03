@@ -131,7 +131,7 @@ export default function Nosotros() {
             </motion.p>
           </div>
 
-          <div className="flex flex-col md:flex-row my-4">
+          <div className="flex flex-col md:flex-row my-4 md:gap-8">
             <Link
               href="/files/politica-inproco.pdf"
               target="_blank"
