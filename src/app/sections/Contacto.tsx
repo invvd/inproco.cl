@@ -9,6 +9,16 @@ import FormInputTextArea from "../components/FormInputTextArea";
 const correo = "contacto@inproco.cl";
 
 function Contacto() {
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    formData.append("access_key", "5a072647-1200-41e8-84ac-bd451ba307aa");
+
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+  };
   return (
     <section
       id="contacto"
@@ -109,7 +119,7 @@ function Contacto() {
               </p>
             </div>
 
-            <form className="space-y-4">
+            <form onSubmit={onSubmit} className="space-y-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
