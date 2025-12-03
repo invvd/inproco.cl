@@ -36,7 +36,7 @@ export function Header() {
 
   return (
     <>
-      <header className="z-20 fixed w-auto h-16 flex justify-between items-center px-4 py-2 rounded-2xl top-2 left-2 right-2 max-w-[calc(100%-2rem)] border border-white/5 shadow-2xl backdrop-blur-md bg-black/30">
+      <header className="z-20 fixed w-[calc(100%-1rem)] h-16 flex justify-between items-center px-4 py-2 rounded-2xl top-2 mx-auto inset-0 max-w-7xl border border-white/5 shadow-2xl backdrop-blur-md bg-black/30">
         {/* Logo con efecto mejorado */}
         <Link
           className="hover:scale-105 transition-all duration-300 max-h-full flex shrink w-fit items-center hover:drop-shadow-lg"

@@ -40,17 +40,17 @@ export default function Nosotros() {
         <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/85" />
       </motion.div>
 
-      <div className="relative z-10 space-y-10 text-white max-w-5xl mx-auto">
+      <div className="relative z-10 space-y-10 text-white w-full max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center flex w-full flex-col items-center justify-center"
+          className="text-center flex flex-col items-center justify-center"
         >
           <SectionTitle className="mb-6 text-3xl">Nosotros</SectionTitle>
 
-          <div className="space-y-8 text-gray-200 text-left text-pretty text-base leading-relaxed">
+          <div className="space-y-8 text-gray-200 text-left text-pretty text-base leading-relaxed mt-8">
             <motion.p
               className="text-sm"
               initial={{ opacity: 0, x: -20 }}
@@ -131,11 +131,11 @@ export default function Nosotros() {
             </motion.p>
           </div>
 
-          <div className="flex gap-8 my-4">
+          <div className="flex flex-col md:flex-row my-4">
             <Link
               href="/files/politica-inproco.pdf"
               target="_blank"
-              className="px-6 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
+              className="px-4 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
             >
               Ver política de la empresa <IconExternalLink size={28} />
             </Link>

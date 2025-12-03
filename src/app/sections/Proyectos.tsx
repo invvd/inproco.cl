@@ -429,7 +429,7 @@ function Proyectos() {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <SectionTitle invertBadgeColor className="mb-6">
+          <SectionTitle invertBadgeColor className="mb-6 scale-95 md:scale-100">
             Proyectos
           </SectionTitle>
           <div className={`text-lg mb-12`}>Experiencia en acción</div>
