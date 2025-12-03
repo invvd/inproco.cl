@@ -68,7 +68,7 @@ export default function Hero({ videoSrc }: HeroProps) {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 2.3 }}
+            transition={{ duration: 0.8, delay: 2 }}
             className="text-lg text-gray-200 mx-auto leading-relaxed text-shadow m-0"
           >
             Expertos en diseño, fabricación y desarrollo de productos y
@@ -78,7 +78,7 @@ export default function Hero({ videoSrc }: HeroProps) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.6 }}
+            transition={{ duration: 0.8, delay: 2.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
           >
             <Link
