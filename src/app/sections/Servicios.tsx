@@ -69,7 +69,7 @@ function Servicios() {
         </p>
       </motion.div>
 
-      <div className="w-full max-w-8xl flex-wrap justify-center flex gap-8 mb-12">
+      <div className="w-full max-w-7xl flex-wrap justify-center flex gap-8 mb-12">
         {servicios.map((servicio, index) => (
           <motion.div
             key={servicio.id}

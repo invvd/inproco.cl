@@ -24,7 +24,7 @@ function Contacto() {
       id="contacto"
       className="w-full relative overflow-hidden bg-gradient-to-br from-primary/20 via-black/90 to-black/95"
     >
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row ">
         {/* Contact Information */}
         <div className="w-full lg:w-1/2 relative">
           <div className="h-full flex flex-col justify-center px-8 md:px-12 lg:px-16 py-8 lg:py-12 text-white">
