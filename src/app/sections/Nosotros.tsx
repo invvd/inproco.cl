@@ -133,11 +133,11 @@ export default function Nosotros() {
 
           <div className="flex gap-8 my-4">
             <Link
-              href="/files/politicas-inproco.pdf"
+              href="/files/politica-inproco.pdf"
               target="_blank"
               className="px-6 py-4 bg-primary hover:bg-primary/80 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2 mt-8"
             >
-              Ver políticas de la empresa <IconExternalLink size={28} />
+              Ver política de la empresa <IconExternalLink size={28} />
             </Link>
             <Link
               href="/files/iso-inproco.pdf"

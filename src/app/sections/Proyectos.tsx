@@ -99,7 +99,7 @@ const proyectos = [
     title: "Subestación 123D, Chuquicamata",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: ["/images/projects/7/1.webp", "/images/projects/7/2.webp"],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Diseño e implementación de subestaciones eléctricas de 1000 kVA para distribución de energía en media tensión.",
@@ -150,7 +150,7 @@ const proyectos = [
   },
   {
     id: 11,
-    year: "2023",
+    year: "2022",
     title: "Sala Eléctrica Bombeo de agua",
     client: "",
     description: "",
@@ -162,7 +162,7 @@ const proyectos = [
   },
   {
     id: 12,
-    year: "2023",
+    year: "2022",
     title: "Subestación 5000 KVA",
     client: "",
     description: "",
@@ -174,7 +174,7 @@ const proyectos = [
   },
   {
     id: 13,
-    year: "2023",
+    year: "2022",
     title: "Subestación BHP-STW, 300 KVA",
     client: "",
     description: "",
@@ -186,7 +186,7 @@ const proyectos = [
   },
   {
     id: 14,
-    year: "2023",
+    year: "2022",
     title: "Subestación 123D, 1000 KVA, Chuquicamata",
     client: "",
     description: "",
@@ -234,18 +234,6 @@ const proyectos = [
   },
   {
     id: 18,
-    year: "2022",
-    title: "Sala Eléctrica proyecto ventilación y extracción 7 peralte",
-    client: "",
-    description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    alcance: "Salas Eléctricas",
-    fullDescription: "",
-    dimensiones: "",
-    detalles: "",
-  },
-  {
-    id: 19,
     year: "2022",
     title: "Sala Eléctrica proyecto ventilación y extracción 7 peralte",
     client: "",
@@ -330,18 +318,6 @@ const proyectos = [
   },
   {
     id: 26,
-    year: "",
-    title: "Celdas GIS proyecto Sol de lila",
-    client: "",
-    description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
-    alcance: "Montaje en Terreno",
-    fullDescription: "",
-    dimensiones: "",
-    detalles: "",
-  },
-  {
-    id: 27,
     year: "",
     title: "Celdas GIS proyecto Sol de lila",
     client: "",
