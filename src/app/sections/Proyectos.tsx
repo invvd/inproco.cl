@@ -12,7 +12,7 @@ const monument = localFont({
 const proyectos = [
   {
     id: 1,
-    year: "2025",
+    year: 2025,
     title: "Subestación Trolley Hualtatas",
     description:
       "Sistema de asistencia para Trolley en botadero Hualtatas, asociado a subestación eléctrica de potencia 6 MVA.",
@@ -25,7 +25,7 @@ const proyectos = [
   },
   {
     id: 2,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica Boleros-AES",
     client: "",
     description:
@@ -39,7 +39,7 @@ const proyectos = [
   },
   {
     id: 3,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica TNT Centinela",
     client: "",
     description:
@@ -53,7 +53,7 @@ const proyectos = [
   },
   {
     id: 4,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica Arenales-AES",
     client: "",
     description:
@@ -67,12 +67,12 @@ const proyectos = [
   },
   {
     id: 5,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica SUE STWM-BHP",
     client: "",
     description:
       "Desarrollo de la segunda etapa de subestaciones eléctricas STWM.",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Desarrollo de la segunda etapa de subestaciones eléctricas STWM.",
@@ -81,12 +81,12 @@ const proyectos = [
   },
   {
     id: 6,
-    year: "2025",
+    year: 2025,
     title: "Envolventes Proyectos Arqueros",
     client: "",
     description:
       "Envolvente para SWG el cual cuenta con SSAA, HVAC y control de acceso",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription:
       "Envolvente para SWG el cual cuenta con SSAA, HVAC y control de acceso",
@@ -95,7 +95,7 @@ const proyectos = [
   },
   {
     id: 7,
-    year: "2024",
+    year: 2024,
     title: "Subestación 123D, Chuquicamata",
     client: "",
     description: "",
@@ -108,7 +108,7 @@ const proyectos = [
   },
   {
     id: 8,
-    year: "2024",
+    year: 2024,
     title: "Sala Eléctrica, Codelco RT",
     client: "",
     description: "",
@@ -120,7 +120,7 @@ const proyectos = [
   },
   {
     id: 9,
-    year: "2024",
+    year: 2024,
     title: "Celda Eléctrica Clip",
     client: "",
     description: "Celda de protección para proyecto Clip.",
@@ -138,11 +138,11 @@ const proyectos = [
   },
   {
     id: 10,
-    year: "2024",
+    year: 2024,
     title: "Celda Eléctrica, Arqueros",
     client: "",
     description: "Envolvente SWITCHGEAR",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Mecánico y Eléctrico",
     fullDescription: "Envolvente SWITCHGEAR",
     dimensiones: "6x2,7m",
@@ -150,11 +150,11 @@ const proyectos = [
   },
   {
     id: 11,
-    year: "2022",
+    year: 2022,
     title: "Sala Eléctrica Bombeo de agua",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -162,11 +162,11 @@ const proyectos = [
   },
   {
     id: 12,
-    year: "2022",
+    year: 2022,
     title: "Subestación 5000 KVA",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -174,11 +174,11 @@ const proyectos = [
   },
   {
     id: 13,
-    year: "2022",
+    year: 2022,
     title: "Subestación BHP-STW, 300 KVA",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -186,11 +186,11 @@ const proyectos = [
   },
   {
     id: 14,
-    year: "2022",
+    year: 2022,
     title: "Subestación 123D, 1000 KVA, Chuquicamata",
     client: "",
     description: "",
-    images: ["/images/projects/14/1.webp", "/images/projects/14/2.webp"],
+    images: [],
     alcance: "Metalmecánica y Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -198,11 +198,11 @@ const proyectos = [
   },
   {
     id: 15,
-    year: "2023",
+    year: 2023,
     title: "Sala Eléctrica Sierra Gorda",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -210,11 +210,11 @@ const proyectos = [
   },
   {
     id: 16,
-    year: "2023",
+    year: 2023,
     title: "Sala Eléctrica Planta Piloto",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -222,11 +222,11 @@ const proyectos = [
   },
   {
     id: 17,
-    year: "2024",
+    year: 2024,
     title: "Sala Eléctrica Collahuasi",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Eléctrica",
     fullDescription: "",
     dimensiones: "",
@@ -234,11 +234,11 @@ const proyectos = [
   },
   {
     id: 18,
-    year: "2022",
+    year: 2022,
     title: "Sala Eléctrica proyecto ventilación y extracción 7 peralte",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
@@ -246,11 +246,11 @@ const proyectos = [
   },
   {
     id: 20,
-    year: "2022",
+    year: 2022,
     title: "Sala Eléctrica proyecto mantos verdes",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
@@ -258,11 +258,11 @@ const proyectos = [
   },
   {
     id: 21,
-    year: "2022",
+    year: 2022,
     title: "Sala Eléctrica planta piloto",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
@@ -270,11 +270,11 @@ const proyectos = [
   },
   {
     id: 22,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica Arqueros",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
@@ -282,11 +282,11 @@ const proyectos = [
   },
   {
     id: 23,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica TNT centinela",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
@@ -294,11 +294,11 @@ const proyectos = [
   },
   {
     id: 24,
-    year: "2025",
+    year: 2025,
     title: "Sala Eléctrica Pucobre",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Salas Eléctricas",
     fullDescription: "",
     dimensiones: "",
@@ -306,11 +306,11 @@ const proyectos = [
   },
   {
     id: 25,
-    year: "",
+    year: 2020,
     title: "Proyecto los olmos y mesamavida",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
@@ -318,11 +318,11 @@ const proyectos = [
   },
   {
     id: 26,
-    year: "",
+    year: 2020,
     title: "Celdas GIS proyecto Sol de lila",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
@@ -330,11 +330,11 @@ const proyectos = [
   },
   {
     id: 28,
-    year: "",
+    year: 2020,
     title: "Antenas GPS Metro L2",
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
@@ -343,9 +343,10 @@ const proyectos = [
   {
     id: 29,
     title: "Interconexión comunicación, Metro L3",
+    year: 2020,
     client: "",
     description: "",
-    images: ["/images/projects/1/1.jpeg", "/images/projects/1/2.jpeg"],
+    images: [],
     alcance: "Montaje en Terreno",
     fullDescription: "",
     dimensiones: "",
@@ -366,18 +367,14 @@ function Proyectos() {
   // Obtener años únicos y ordenarlos
   const availableYears = Array.from(new Set(proyectos.map((p) => p.year)))
     .filter(
-      (year): year is string =>
-        typeof year === "string" &&
-        year !== undefined &&
-        year !== "" &&
-        year.trim() !== ""
+      (year): year is number => typeof year === "number" && year !== undefined
     )
     .sort()
     .reverse();
 
   // Filtrar proyectos por año seleccionado
   const filteredProjects = selectedYear
-    ? proyectos.filter((proyecto) => proyecto.year === selectedYear)
+    ? proyectos.filter((proyecto) => proyecto.year === parseInt(selectedYear))
     : proyectos;
 
   const openModal = (project: (typeof proyectos)[0]) => {
@@ -454,9 +451,9 @@ function Proyectos() {
             {availableYears.map((year) => (
               <button
                 key={year}
-                onClick={() => setSelectedYear(year)}
+                onClick={() => setSelectedYear(year.toString())}
                 className={`px-6 py-3 rounded-full border transition-all duration-300 ${
-                  selectedYear === year
+                  selectedYear === year.toString()
                     ? "bg-primary text-white border-primary"
                     : "bg-transparent text-gray-700 border-gray-300 hover:border-primary hover:text-primary"
                 }`}
@@ -473,42 +470,46 @@ function Proyectos() {
             className="flex overflow-x-auto scrollbar-hide overflow-y-hidden gap-6"
             ref={scrollContainerRef}
           >
-            {filteredProjects.map((proyecto) => (
-              <motion.div
-                key={proyecto.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="min-w-[300px] max-w-[350px] bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 hover:border-primary/50 transition-all duration-300 cursor-pointer group shadow-lg hover:shadow-xl"
-                onClick={() => openModal(proyecto)}
-              >
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src={proyecto.images[0]}
-                    alt={proyecto.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
-                    {proyecto.year}
+            {filteredProjects
+              .sort((a, b) => b.year - a.year)
+              .map((proyecto) => (
+                <motion.div
+                  key={proyecto.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="min-w-[300px] max-w-[350px] bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 hover:border-primary/50 transition-all duration-300 cursor-pointer group shadow-lg hover:shadow-xl"
+                  onClick={() => openModal(proyecto)}
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    {proyecto.images.length > 0 && (
+                      <Image
+                        src={proyecto.images[0]}
+                        alt={proyecto.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                      {proyecto.year}
+                    </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3
-                    className={`text-xl font-bold mb-3 text-gray-900 ${monument.className}`}
-                  >
-                    {proyecto.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                    {proyecto.description}
-                  </p>
-                  <div className="text-xs text-gray-500 mb-3">
-                    {proyecto.alcance}
+                  <div className="p-6">
+                    <h3
+                      className={`text-xl font-bold mb-3 text-gray-900 ${monument.className}`}
+                    >
+                      {proyecto.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                      {proyecto.description}
+                    </p>
+                    <div className="text-xs text-gray-500 mb-3">
+                      {proyecto.alcance}
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
           </div>
 
           {/* Navegación de scroll */}
