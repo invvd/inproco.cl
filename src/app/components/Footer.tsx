@@ -174,7 +174,7 @@ function Footer() {
               </div>
 
               <Link
-                href={"https://danielmass.vercel.app"}
+                href={"https://danielmass.dev"}
                 rel="noopener noreferrer"
                 target="_blank"
                 className="text-sm text-center text-white/50 hover:text-white hover:scale-105 transition md:text-right"
