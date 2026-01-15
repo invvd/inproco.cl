@@ -5,10 +5,13 @@ import { motion } from "motion/react";
 import FormInput from "../components/FormInput";
 import SubmitButton from "../components/SubmitButton";
 import FormInputTextArea from "../components/FormInputTextArea";
+import { useRouter } from "next/navigation";
 
 const correo = "contacto@inproco.cl";
 
 function Contacto() {
+  const router = useRouter();
+
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
@@ -18,6 +21,7 @@ function Contacto() {
       method: "POST",
       body: formData,
     });
+    router.refresh();
   };
   return (
     <section
