@@ -127,6 +127,7 @@ function Contacto() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <FormInput
+                  name="Nombre"
                   label="Nombre completo"
                   placeholder="Ej: Juan Pérez"
                 />
@@ -139,6 +140,7 @@ function Contacto() {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <FormInput
+                  name="Email"
                   label="Correo electrónico"
                   placeholder="ejemplo@mail.com"
                 />
@@ -151,6 +153,7 @@ function Contacto() {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <FormInput
+                  name="Telefono"
                   label="Teléfono (opcional)"
                   placeholder="+56 9 1234 5678"
                 />
@@ -163,6 +166,7 @@ function Contacto() {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <FormInputTextArea
+                  name="Mensaje"
                   label="Mensaje"
                   placeholder="Cuéntanos sobre tu proyecto o consulta..."
                 />
