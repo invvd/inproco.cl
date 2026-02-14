@@ -23,6 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <meta
+        name="google-site-verification"
+        content="VVygJcpmJhd478Rz64qIhN4F6hnHPxsGOHprtZ9OFYU"
+      />
       <body className={`${montserrat.className} max-w-screen antialiased`}>
         <Header />
         {children}
