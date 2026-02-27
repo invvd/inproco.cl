@@ -187,26 +187,26 @@ const proyectos = [
   {
     id: 14,
     year: 2022,
-    title: "Subestación 123D, 1000 KVA, Chuquicamata",
+    title: "Subestación 123D, Chuquicamata",
     client: "",
-    description: "",
-    images: [],
+    description: "1000 KVA",
+    images: [`/images/projects/14/1.webp`],
     alcance: "Metalmecánica y Eléctrica",
-    fullDescription: "",
-    dimensiones: "",
-    detalles: "",
+    fullDescription: "1000 KVA",
+    dimensiones: "6,0 m x 2,7 m x 4,2 m.",
+    detalles: "1 módulo",
   },
   {
     id: 15,
     year: 2023,
     title: "Sala Eléctrica Sierra Gorda",
     client: "",
-    description: "",
+    description: "Proyecto de integración electrica",
     images: [],
     alcance: "Eléctrica",
-    fullDescription: "",
+    fullDescription: "Proyecto de integración electrica",
     dimensiones: "",
-    detalles: "",
+    detalles: "1 módulo",
   },
   {
     id: 16,
@@ -259,7 +259,7 @@ const proyectos = [
   {
     id: 21,
     year: 2022,
-    title: "Sala Eléctrica planta piloto",
+    title: "Sala Eléctrica Planta Piloto",
     client: "",
     description: "",
     images: [],
@@ -352,6 +352,54 @@ const proyectos = [
     dimensiones: "",
     detalles: "",
   },
+  {
+    id: 30,
+    title: "Subestación eléctrica, 500 KVA",
+    year: 2020,
+    client: "",
+    description: "",
+    images: ["/images/projects/30/1.webp"],
+    alcance: "Metalmecánica y Eléctrica",
+    fullDescription: "",
+    dimensiones: "4,0 m x 3,5 m x 4,2 m.",
+    detalles: "2 módulos",
+  },
+  {
+    id: 31,
+    title: "Subestación Saneamento, Codelco RT",
+    year: 2023,
+    client: "",
+    description: "Plataformas de 70 m2.",
+    images: ["/images/projects/31/1.webp"],
+    alcance: "Metalmecánica y Eléctrica",
+    fullDescription: "Plataformas de 70 m2.",
+    dimensiones: "6,0 m x 3,0 m x 4,2 m.",
+    detalles: "3 módulos",
+  },
+  {
+    id: 32,
+    title: "Subestación BHP-STW",
+    year: 2023,
+    client: "",
+    description: "5 MVA.",
+    images: ["/images/projects/32/1.webp"],
+    alcance: "Metalmecánico y Eléctrico",
+    fullDescription: "5 MVA.",
+    dimensiones: "7,0 m x 3,0 m x 4,2 m.",
+    detalles: "2 módulos",
+  },
+  {
+    id: 33,
+    title: "Subestación Teck",
+    year: 2023,
+    client: "",
+    description: "8 MVA.",
+    images: ["/images/projects/33/1.webp", "/images/projects/33/2.webp"],
+    alcance: "Metalmecánico y Eléctrico",
+    fullDescription: "8 MVA.",
+    dimensiones: "16,0 m x 4,2 m x 4,2 m.",
+    detalles: "1 módulo",
+  },
 ];
 
 function Proyectos() {
@@ -367,7 +415,7 @@ function Proyectos() {
   // Obtener años únicos y ordenarlos
   const availableYears = Array.from(new Set(proyectos.map((p) => p.year)))
     .filter(
-      (year): year is number => typeof year === "number" && year !== undefined
+      (year): year is number => typeof year === "number" && year !== undefined,
     )
     .sort()
     .reverse();
