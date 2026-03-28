@@ -40,11 +40,11 @@ function Contacto() {
               className="mb-8"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                Contáctanos
+                Cotiza tu sala eléctrica
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
-                ¿Tienes un proyecto en mente? Estamos aquí para convertir tus
-                ideas en realidad.
+                Cuéntanos tu requerimiento de sala eléctrica, subestación o
+                tablero y te contactaremos para evaluar tu proyecto en Chile.
               </p>
             </motion.div>
 
@@ -116,10 +116,11 @@ function Contacto() {
           >
             <div className="mb-6 text-center lg:text-left">
               <h3 className="text-2xl font-bold text-white mb-2">
-                Envíanos un mensaje
+                Solicita una propuesta técnica
               </h3>
               <p className="text-gray-300 text-sm">
-                Cuéntanos sobre tu proyecto y te contactaremos a la brevedad
+                Envía los datos de tu proyecto y nuestro equipo de ingeniería te
+                responderá a la brevedad.
               </p>
             </div>
 

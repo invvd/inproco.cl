@@ -15,28 +15,28 @@ const servicios = [
     title: "Diseño y Cálculo",
     image: "/images/diseno.webp",
     description:
-      "Diseño de salas, sub estaciones, celdas equipos y tableros. Memorias de iluminación, cálculo de consumo y cargas, levantamientos, regularizaciones y más.",
+      "Diseño de salas eléctricas, subestaciones, celdas, equipos y tableros. Memorias de iluminación, cálculo de consumo y cargas, levantamientos y regularizaciones.",
   },
   {
     id: 2,
     title: "Fabricación y Construcción",
     image: "/images/fabricacion.webp",
     description:
-      "Fabricación de salas eléctricas, sub estaciones, celdas y equipamiento eléctrico. Construcción de equipamiento mecánico, plataformas, marcos y yugos de izaje.",
+      "Fabricación de salas eléctricas, subestaciones, celdas y equipamiento eléctrico. Construcción de equipamiento mecánico, plataformas, marcos y yugos de izaje.",
   },
   {
     id: 3,
     title: "Montaje e Integración",
     image: "/images/montaje.webp",
     description:
-      "Montaje de salas e instalaciones eléctricas. Integración de equipos eléctricos; VDF, PLC, CCM, SW de media y baja tensión. Integración de todo tipo de tableros eléctricos",
+      "Montaje de salas e instalaciones eléctricas. Integración de equipos eléctricos VDF, PLC, CCM y SW de media y baja tensión, junto con tableros eléctricos.",
   },
   {
     id: 4,
     title: "Pruebas y Controles",
     image: "/images/pruebas.webp",
     description:
-      "Pruebas de aislación en baja y media tensión, resistencia de contacto, mediciones de energía bajo condiciones de prueba estrictamente controladas.",
+      "Pruebas de aislación en baja y media tensión, resistencia de contacto y mediciones de energía bajo condiciones de prueba controladas.",
   },
   {
     id: 5,
@@ -64,8 +64,8 @@ function Servicios() {
           Servicios
         </SectionTitle>
         <p className="text-center max-w-2xl mx-auto text-gray-700">
-          Ofrecemos soluciones integrales de ingeniería con la más alta calidad
-          y compromiso
+          Ofrecemos soluciones integrales de ingeniería eléctrica para diseñar,
+          fabricar, montar y probar salas y tableros eléctricos en todo Chile.
         </p>
       </motion.div>
 
@@ -191,7 +191,7 @@ function Servicios() {
           href="#contacto"
           className="inline-flex items-center px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
-          Solicita una cotización
+          Cotizar salas eléctricas
           <svg
             className="w-5 h-5 ml-2"
             fill="none"

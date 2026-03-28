@@ -14,7 +14,8 @@ function BadgeInproco({
       loading="lazy"
       alt="Insignia de Inproco"
       className={
-        "drop-shadow-md scale-90 -translate-y-1 gap-2 object-cover " + className
+        "drop-shadow-md scale-90 -translate-y-1 gap-2 object-contain " +
+        className
       }
       src={
         style === "light" ? "/logos/badge-white.webp" : "/logos/badge-gray.webp"

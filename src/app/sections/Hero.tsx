@@ -40,7 +40,7 @@ export default function Hero({ videoSrc }: HeroProps) {
         autoPlay
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
       >
         <source src={videoSrc} />
       </video>
@@ -62,7 +62,7 @@ export default function Hero({ videoSrc }: HeroProps) {
             transition={{ duration: 0.8, delay: 2 }}
             className="text-4xl md:text-6xl m-0 font-bold text-shadow-lg leading-tight"
           >
-            INGENIERÍA & DESARROLLO
+            Salas Eléctricas en Chile
           </motion.h1>
 
           <motion.p
@@ -71,8 +71,8 @@ export default function Hero({ videoSrc }: HeroProps) {
             transition={{ duration: 0.8, delay: 2 }}
             className="text-lg text-gray-200 mx-auto leading-relaxed text-shadow m-0"
           >
-            Expertos en diseño, fabricación y desarrollo de productos y
-            servicios para la minería, industria y obras civiles
+            Diseño, fabricación e integración de salas eléctricas, subestaciones
+            y tableros para minería, industria y obras civiles en todo Chile.
           </motion.p>
 
           <motion.div
@@ -91,7 +91,7 @@ export default function Hero({ videoSrc }: HeroProps) {
               href="#contacto"
               className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
             >
-              Contáctanos
+              Cotizar sala eléctrica
             </Link>
           </motion.div>
         </motion.div>

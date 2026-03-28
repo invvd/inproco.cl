@@ -480,7 +480,10 @@ function Proyectos() {
           <SectionTitle invertBadgeColor className="mb-6 scale-95 md:scale-100">
             Proyectos
           </SectionTitle>
-          <div className={`text-lg mb-12`}>Experiencia en acción</div>
+          <div className={`text-lg mb-12 text-center max-w-3xl`}>
+            Casos reales de salas y tableros eléctricos, subestaciones y celdas
+            para minería, energía e industria en todo Chile.
+          </div>
         </div>
 
         {/* Filtros por año */}

@@ -70,7 +70,8 @@ export default function Nosotros() {
               <strong className="text-white font-semibold">
                 minería, industria y obras civiles
               </strong>
-              .
+              . Nos especializamos en salas eléctricas, subestaciones y tableros
+              para proyectos de alta exigencia en Chile.
             </motion.p>
 
             <motion.p
@@ -93,7 +94,8 @@ export default function Nosotros() {
               <strong className="text-white font-semibold">
                 ingeniería mecánica y eléctrica
               </strong>
-              .
+              , con foco en soluciones de salas eléctricas para minería e
+              industria.
             </motion.p>
 
             <motion.p
