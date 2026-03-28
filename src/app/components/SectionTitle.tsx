@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import BadgeInproco from "./BadgeInproco";
+//import BadgeInproco from "./BadgeInproco";
 import localFont from "next/font/local";
 
 const monument = localFont({
@@ -14,7 +14,7 @@ type SectionTitleProps = {
 
 function SectionTitle({
   children,
-  invertBadgeColor,
+  //invertBadgeColor,
   className,
 }: SectionTitleProps) {
   return (
