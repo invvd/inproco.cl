@@ -40,7 +40,7 @@ function Contacto() {
               className="mb-8"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-3">
-                Cotiza tu sala eléctrica
+                Cotiza tu proyecto
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
                 Cuéntanos tu requerimiento de sala eléctrica, subestación o

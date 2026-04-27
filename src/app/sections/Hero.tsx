@@ -62,7 +62,7 @@ export default function Hero({ videoSrc }: HeroProps) {
             transition={{ duration: 0.8, delay: 2 }}
             className="text-4xl md:text-6xl m-0 font-bold text-shadow-lg leading-tight"
           >
-            Salas Eléctricas en Chile
+            Ingeniería eléctrica y mecánica en Chile
           </motion.h1>
 
           <motion.p
@@ -91,7 +91,7 @@ export default function Hero({ videoSrc }: HeroProps) {
               href="#contacto"
               className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105"
             >
-              Cotizar sala eléctrica
+              Cotiza tu proyecto
             </Link>
           </motion.div>
         </motion.div>
