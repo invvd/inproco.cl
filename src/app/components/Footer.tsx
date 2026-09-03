@@ -126,7 +126,7 @@ function Footer() {
                   href={"https://maps.app.goo.gl/xhscd1JgvEFeeArBA"}
                   className="text-sm text-gray-400 hover:text-primary transition-colors duration-300"
                 >
-                  <p>Cam. La Vara 03395</p>
+                  <p>Av. Jorge Alessandri 20011</p>
                   <p>San Bernardo, RM</p>
                 </Link>
               </div>

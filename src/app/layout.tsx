@@ -68,7 +68,7 @@ export default function RootLayout({
     email: "contacto@inproco.cl",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Cam. La Vara 03395",
+      streetAddress: "Av. Jorge Alessandri 20011",
       addressLocality: "San Bernardo",
       addressRegion: "Region Metropolitana",
       addressCountry: "CL",

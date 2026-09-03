@@ -68,7 +68,7 @@ function Contacto() {
                       Nuestra oficina
                     </span>
                     <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      Cam. La Vara 03395, San Bernardo
+                      Av. Jorge Alessandri 20011, San Bernardo
                     </span>
                     <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                       Región Metropolitana, Chile
