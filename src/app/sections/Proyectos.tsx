@@ -430,6 +430,7 @@ function Proyectos() {
     setSelectedProject(project);
     setCurrentImageIndex(0);
     setIsModalOpen(true);
+    // eslint-disable-next-line react-hooks/immutability -- intentional scroll-lock on the DOM body, not React state
     document.body.style.overflow = "hidden";
   };
 
